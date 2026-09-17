@@ -1,10 +1,10 @@
-![lazyvimx](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/banner.jpeg)
+![lazyvimx](https://raw.githubusercontent.com/lazyvimx/nvim/assets/banner.jpeg)
 
 <div align="center">
 
-[![Релиз](https://img.shields.io/github/v/release/aimuzov/lazyvimx?style=flat-square&label=релиз)](https://github.com/aimuzov/lazyvimx/releases)
-[![Лицензия](https://img.shields.io/github/license/aimuzov/lazyvimx?style=flat-square&label=лицензия)](https://github.com/aimuzov/lazyvimx/blob/main/LICENSE)
-[![Звёзды](https://img.shields.io/github/stars/aimuzov/lazyvimx?style=flat-square&label=звёзды)](https://github.com/aimuzov/lazyvimx/stargazers)
+[![Релиз](https://img.shields.io/github/v/release/lazyvimx/nvim?style=flat-square&label=релиз)](https://github.com/lazyvimx/nvim/releases)
+[![Лицензия](https://img.shields.io/github/license/lazyvimx/nvim?style=flat-square&label=лицензия)](https://github.com/lazyvimx/nvim/blob/main/LICENSE)
+[![Звёзды](https://img.shields.io/github/stars/lazyvimx/nvim?style=flat-square&label=звёзды)](https://github.com/lazyvimx/nvim/stargazers)
 ![Neovim](https://img.shields.io/badge/Neovim-0.10+-green?style=flat-square)
 ![Extras](https://img.shields.io/badge/экстры-50-purple?style=flat-square)
 
@@ -82,7 +82,7 @@ git-воркфлоу, поддержка русской раскладки — �
 
 ```lua
 local lazy_opts = {
-	spec = { { "aimuzov/lazyvimx", import = "lazyvimx.boot" } },
+	spec = { { "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" } },
 
 	install = { colorscheme = { "catppuccin", "tokyonight" } },
 	checker = { enabled = true, notify = false },
@@ -125,7 +125,8 @@ nvim
 local lazy_opts = {
   spec = {
     {
-      "aimuzov/lazyvimx",
+      "lazyvimx/nvim",
+      name = "lazyvimx",
       import = "lazyvimx.boot",
       opts = {
         colorscheme = "catppuccin",
@@ -143,7 +144,8 @@ local lazy_opts = {
 
 ```lua
 return {
-  "aimuzov/lazyvimx",
+  "lazyvimx/nvim",
+  name = "lazyvimx",
   opts = {
     colorscheme = "catppuccin",
     bufferline_groups = {
@@ -373,7 +375,7 @@ require("lazyvimx").setup({
 
 ## 🤝 Контрибьютинг
 
-Баги и идеи — в [issues](https://github.com/aimuzov/lazyvimx/issues). Как устроен проект и
+Баги и идеи — в [issues](https://github.com/lazyvimx/nvim/issues). Как устроен проект и
 как написать свою экстру — в [Гайд контрибьютора](CONTRIBUTING.ru.md).
 
 ## 📄 Лицензия

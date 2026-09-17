@@ -8,7 +8,7 @@ local repo_root = vim.fs.normalize(vim.fn.fnamemodify(debug.getinfo(1, "S").sour
 -- Набор экстр задаёт тейп через DEMO_EXTRAS; сами импорты лежат
 -- в lua/plugins/demo.lua — см. комментарий там про порядок загрузки.
 local lazy_opts = {
-	spec = { { "aimuzov/lazyvimx", dir = repo_root, import = "lazyvimx.boot" } },
+	spec = { { "lazyvimx/nvim", name = "lazyvimx", dir = repo_root, import = "lazyvimx.boot" } },
 
 	-- Установку делает warmup.sh в headless: на камере окно установки
 	-- lazy.nvim не должно появляться никогда.

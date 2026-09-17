@@ -33,7 +33,7 @@ require("lazyvimx").setup({
 
 The options schema and defaults are in
 [Configuration](CONFIGURATION.md#⚙️-the-setup-function). You usually don't call `setup()`
-yourself: options from the `"aimuzov/lazyvimx"` plugin spec end up here automatically (the
+yourself: options from the `"lazyvimx"` plugin spec end up here automatically (the
 spec in `boot.lua` has `config = true`).
 
 ### `config`
@@ -240,7 +240,7 @@ opts.keys = {
 
 **Module:** `lazyvimx.boot` (`lua/lazyvimx/boot.lua`)
 
-The entry point: `{ "aimuzov/lazyvimx", import = "lazyvimx.boot" }`. Internal functions, not
+The entry point: `{ "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" }`. Internal functions, not
 called directly:
 
 | Function                   | What it does                                                                                          |

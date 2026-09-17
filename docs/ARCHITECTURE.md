@@ -46,7 +46,7 @@ is mistakenly used as a standalone Neovim config.
 
 ### boot.lua
 
-The entry point is `{ "aimuzov/lazyvimx", import = "lazyvimx.boot" }`. The module returns a
+The entry point is `{ "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" }`. The module returns a
 sequence of specs:
 
 ```lua
@@ -60,7 +60,7 @@ return {
 	{ "LazyVim/LazyVim", import = "lazyvim.plugins" },            -- 6
 	{ "LazyVim/LazyVim", opts = set_colorscheme },                -- 7
 
-	{ "aimuzov/lazyvimx", dependencies = { "LazyVim/LazyVim" }, vscode = true, config = true }, -- 8
+	{ "lazyvimx/nvim", name = "lazyvimx", dependencies = { "LazyVim/LazyVim" }, vscode = true, config = true }, -- 8
 
 	{ import = "plugins", enabled = has_plugins_dir },            -- 9
 }

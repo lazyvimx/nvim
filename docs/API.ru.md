@@ -33,7 +33,7 @@ require("lazyvimx").setup({
 
 Схема опций и значения по умолчанию — в
 [Настройка](CONFIGURATION.ru.md#⚙️-функция-setup). Обычно вызывать `setup()` вручную не
-нужно: опции из спека плагина `"aimuzov/lazyvimx"` попадают сюда сами (в `boot.lua` у спека
+нужно: опции из спека плагина `"lazyvimx"` попадают сюда сами (в `boot.lua` у спека
 стоит `config = true`).
 
 ### `config`
@@ -239,7 +239,7 @@ opts.keys = {
 
 **Модуль:** `lazyvimx.boot` (`lua/lazyvimx/boot.lua`)
 
-Точка входа: `{ "aimuzov/lazyvimx", import = "lazyvimx.boot" }`. Внутренние функции, напрямую
+Точка входа: `{ "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" }`. Внутренние функции, напрямую
 не вызываются:
 
 | Функция                    | Что делает                                                                                    |

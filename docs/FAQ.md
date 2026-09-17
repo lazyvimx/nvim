@@ -223,4 +223,4 @@ Catppuccin, Tokyo Night, and Nord.
 - 📖 [Documentation](./)
 - 🔧 [Troubleshooting](TROUBLESHOOTING.md)
 - 💬 [Telegram discussion](https://t.me/aimuzov_dotfiles)
-- 🐛 [Report an issue](https://github.com/aimuzov/lazyvimx/issues)
+- 🐛 [Report an issue](https://github.com/lazyvimx/nvim/issues)

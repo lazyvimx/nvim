@@ -58,7 +58,8 @@ local function create_autocmd_setup_mounted_buf()
 end
 
 return {
-	"aimuzov/lazyvimx",
+	"lazyvimx/nvim",
+	name = "lazyvimx",
 	desc = desc,
 	opts = create_autocmd_setup_mounted_buf,
 }

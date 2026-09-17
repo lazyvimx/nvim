@@ -222,4 +222,4 @@ Catppuccin, Tokyo Night и Nord.
 - 📖 [Документация](./)
 - 🔧 [Решение проблем](TROUBLESHOOTING.ru.md)
 - 💬 [Обсуждение в Telegram](https://t.me/aimuzov_dotfiles)
-- 🐛 [Сообщить о проблеме](https://github.com/aimuzov/lazyvimx/issues)
+- 🐛 [Сообщить о проблеме](https://github.com/lazyvimx/nvim/issues)

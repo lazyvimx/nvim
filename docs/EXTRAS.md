@@ -116,7 +116,7 @@ Extras that improve the look and the interface.
 
 ### ui.better-colorcolumn
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-colorcolumn.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-colorcolumn.gif)
 
 **Import:** `lazyvimx.extras.ui.better-colorcolumn`
 
@@ -127,7 +127,7 @@ column.
 
 ### ui.better-cursorline
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-cursorline.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-cursorline.gif)
 
 **Import:** `lazyvimx.extras.ui.better-cursorline`
 
@@ -138,7 +138,7 @@ Cursorline only in the active window; the line number is always highlighted. Spe
 
 ### ui.better-diagnostic
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-diagnostic.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-diagnostic.gif)
 
 **Import:** `lazyvimx.extras.ui.better-diagnostic`
 
@@ -149,7 +149,7 @@ virtual text is disabled.
 
 ### ui.better-explorer
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-explorer.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-explorer.gif)
 
 **Import:** `lazyvimx.extras.ui.better-explorer`
 
@@ -163,7 +163,7 @@ file previews.
 
 ### ui.better-float
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-float.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-float.gif)
 
 **Import:** `lazyvimx.extras.ui.better-float`
 
@@ -172,7 +172,7 @@ Mason, LSP windows, neo-tree, noice, Snacks terminals, lazygit, and fzf-lua.
 
 ### ui.better-insert-mode
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-insert-mode.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-insert-mode.gif)
 
 **Import:** `lazyvimx.extras.ui.better-insert-mode`
 
@@ -181,7 +181,7 @@ guides, and the colorcolumn. Everything comes back when you leave insert.
 
 ### ui.better-linenumbers
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-linenumbers.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-linenumbers.gif)
 
 **Import:** `lazyvimx.extras.ui.better-linenumbers`
 
@@ -190,7 +190,7 @@ numbers in terminal buffers.
 
 ### ui.better-live-rename
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-live-rename.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-live-rename.gif)
 
 **Import:** `lazyvimx.extras.ui.better-live-rename`
 
@@ -214,7 +214,7 @@ warning.
 
 ### ui.better-reference-highlight
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-reference-highlight.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-reference-highlight.gif)
 
 **Import:** `lazyvimx.extras.ui.better-reference-highlight`
 
@@ -225,7 +225,7 @@ Catppuccin, a magenta blend for Tokyo Night.
 
 ### ui.better-whitespace
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-whitespace.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-whitespace.gif)
 
 **Import:** `lazyvimx.extras.ui.better-whitespace`
 
@@ -236,7 +236,7 @@ end of line `↩`.
 
 ### ui.bolder-separators
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-bolder-separators.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-bolder-separators.gif)
 
 **Import:** `lazyvimx.extras.ui.bolder-separators`
 
@@ -244,7 +244,7 @@ Heavy Unicode window separators: `━`, `┃`, `┳`, `┻`, `╋`, `┫`, `┣`
 
 ### ui.diff-view
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-diff-view.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-diff-view.gif)
 
 **Import:** `lazyvimx.extras.ui.diff-view`
 
@@ -257,7 +257,7 @@ history at the bottom — consistent with the other sidebars.
 
 ### ui.highlighted-ansi-escape
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-highlighted-ansi-escape.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-highlighted-ansi-escape.gif)
 
 **Import:** `lazyvimx.extras.ui.highlighted-ansi-escape`
 
@@ -271,7 +271,7 @@ plugin log.
 
 ### ui.highlighted-colors
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-highlighted-colors.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-highlighted-colors.gif)
 
 **Import:** `lazyvimx.extras.ui.highlighted-colors`
 
@@ -281,7 +281,7 @@ A 󱓻 indicator in the color of each hex code at the end of the line.
 
 ### ui.peek-preview
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-peek-preview.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-peek-preview.gif)
 
 **Import:** `lazyvimx.extras.ui.peek-preview`
 
@@ -294,7 +294,7 @@ results open a preview with a list.
 
 ### ui.scrollbar
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-scrollbar.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-scrollbar.gif)
 
 **Import:** `lazyvimx.extras.ui.scrollbar`
 
@@ -304,7 +304,7 @@ A scrollbar only in the active window. Hidden in insert mode and in special buff
 
 ### ui.simple-mode
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-simple-mode.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-simple-mode.gif)
 
 **Import:** `lazyvimx.extras.ui.simple-mode`
 
@@ -313,7 +313,7 @@ statusline, bufferline, neo-tree, and line numbers.
 
 ### ui.showkeys
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-showkeys.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-showkeys.gif)
 
 **Import:** `lazyvimx.extras.ui.showkeys`
 
@@ -325,7 +325,7 @@ documentation is recorded with it.
 
 ### ui.symbol-usage
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-symbol-usage.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-symbol-usage.gif)
 
 **Import:** `lazyvimx.extras.ui.symbol-usage`
 
@@ -337,7 +337,7 @@ counter.
 
 ### ui.winbar
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-winbar.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-winbar.gif)
 
 **Import:** `lazyvimx.extras.ui.winbar`
 
@@ -352,7 +352,7 @@ transparent background. Not shown in special buffers.
 
 ### coding.comments
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/coding-comments.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/coding-comments.gif)
 
 **Import:** `lazyvimx.extras.coding.comments`
 
@@ -381,7 +381,7 @@ command — wrap a selection in an abbreviation.
 
 ### motions.better-cursor-move
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/motions-better-cursor-move.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/motions-better-cursor-move.gif)
 
 **Import:** `lazyvimx.extras.motions.better-cursor-move`
 
@@ -391,7 +391,7 @@ The cursor stays put on shifts (`>`, `<`) and filters. Works in VSCode too.
 
 ### motions.better-move-between-words
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/motions-better-move-between-words.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/motions-better-move-between-words.gif)
 
 **Import:** `lazyvimx.extras.motions.better-move-between-words`
 
@@ -408,7 +408,7 @@ invisible.
 
 ### motions.langmapper
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/motions-langmapper.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/motions-langmapper.gif)
 
 **Import:** `lazyvimx.extras.motions.langmapper`
 
@@ -422,7 +422,7 @@ plus which-key and Snacks integration.
 
 ### motions.sibling-move
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/motions-sibling-move.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/motions-sibling-move.gif)
 
 **Import:** `lazyvimx.extras.motions.sibling-move`
 
@@ -436,7 +436,7 @@ target is highlighted for 250 ms.
 
 ### motions.sibling-swap
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/motions-sibling-swap.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/motions-sibling-swap.gif)
 
 **Import:** `lazyvimx.extras.motions.sibling-swap`
 
@@ -450,7 +450,7 @@ properties. The node under the cursor is highlighted.
 
 ### motions.splitting-joining-blocks
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/motions-splitting-joining-blocks.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/motions-splitting-joining-blocks.gif)
 
 **Import:** `lazyvimx.extras.motions.splitting-joining-blocks`
 
@@ -510,7 +510,7 @@ under `/etc` on a remote host: a write via tempfile loses them.
 
 ### buf.tab-scope
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/buf-tab-scope.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/buf-tab-scope.gif)
 
 **Import:** `lazyvimx.extras.buf.tab-scope`
 
@@ -527,7 +527,7 @@ tab.
 
 ### git.conflicts
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/git-conflicts.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/git-conflicts.gif)
 
 **Import:** `lazyvimx.extras.git.conflicts`
 
@@ -636,7 +636,7 @@ the list of validated types is extended (css, scss, less, html, vue, svelte, and
 
 ### colorschemes.nord
 
-![Demo](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/colorschemes-nord.gif)
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/colorschemes-nord.gif)
 
 **Import:** `lazyvimx.extras.colorschemes.nord` (included in `core.colorschemes`)
 

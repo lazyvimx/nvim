@@ -24,7 +24,7 @@ The complete guide to configuring lazyvimx.
 -- lua/config/lazy.lua
 return {
 	spec = {
-		{ "aimuzov/lazyvimx", import = "lazyvimx.boot" },
+		{ "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" },
 	},
 }
 ```
@@ -37,7 +37,7 @@ lazyvimx with default settings; all extras are available via `:LazyExtras` but d
 -- lua/config/lazy.lua
 return {
 	spec = {
-		{ "aimuzov/lazyvimx", import = "lazyvimx.boot" },
+		{ "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" },
 		{ import = "lazyvimx.extras.core.all" }, -- everything at once
 	},
 }
@@ -49,7 +49,8 @@ return {
 
 ```lua
 {
-	"aimuzov/lazyvimx",
+	"lazyvimx/nvim",
+	name = "lazyvimx",
 	import = "lazyvimx.boot",
 	opts = {
 		colorscheme = "catppuccin",

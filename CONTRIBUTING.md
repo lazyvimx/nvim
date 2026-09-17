@@ -97,7 +97,7 @@ Documentation improvements are always welcome:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/aimuzov/lazyvimx.git ~/.local/share/nvim/lazy/lazyvimx
+   git clone https://github.com/lazyvimx/nvim.git ~/.local/share/nvim/lazy/lazyvimx
    ```
 
 2. Create a test configuration:
@@ -325,7 +325,7 @@ Closes #<issue_number>
 If you have questions:
 
 1. Check [FAQ.md](FAQ.md)
-2. Check [existing issues](https://github.com/aimuzov/lazyvimx/issues)
+2. Check [existing issues](https://github.com/lazyvimx/nvim/issues)
 3. Ask in [Discussions](https://t.me/aimuzov_dotfiles)
 4. Open a new issue
 

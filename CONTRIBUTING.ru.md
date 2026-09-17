@@ -97,7 +97,7 @@ Overrides изменяют существующие конфигурации п�
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/aimuzov/lazyvimx.git ~/.local/share/nvim/lazy/lazyvimx
+   git clone https://github.com/lazyvimx/nvim.git ~/.local/share/nvim/lazy/lazyvimx
    ```
 
 2. Создайте тестовую конфигурацию:
@@ -325,7 +325,7 @@ Closes #<issue_number>
 Если у вас есть вопросы:
 
 1. Проверьте [FAQ.md](docs/FAQ.ru.md)
-2. Проверьте [существующие issues](https://github.com/aimuzov/lazyvimx/issues)
+2. Проверьте [существующие issues](https://github.com/lazyvimx/nvim/issues)
 3. Спросите в [Discussions](https://t.me/aimuzov_dotfiles)
 4. Откройте новый issue
 

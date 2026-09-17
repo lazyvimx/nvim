@@ -4,7 +4,7 @@
 local lazy_opts = {
 	spec = {
 		-- lazyvimx with boot import
-		{ "aimuzov/lazyvimx", import = "lazyvimx.boot" },
+		{ "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" },
 
 		-- Core overrides (includes VSCode integration)
 		{ import = "lazyvimx.extras.core.overrides" },

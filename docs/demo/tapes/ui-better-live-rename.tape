@@ -20,7 +20,7 @@ Set TypingSpeed 150ms
 Set Framerate 24
 
 Hide
-Type "export XDG_CONFIG_HOME=/Users/aimuzov/Projects/aimuzov/lazyvimx/docs/demo/profile/config XDG_DATA_HOME=/Users/aimuzov/Projects/aimuzov/lazyvimx/docs/demo/profile/data XDG_STATE_HOME=/Users/aimuzov/Projects/aimuzov/lazyvimx/docs/demo/profile/state XDG_CACHE_HOME=/Users/aimuzov/Projects/aimuzov/lazyvimx/docs/demo/profile/cache"
+Type "export XDG_CONFIG_HOME=/Users/aimuzov/Projects/lazyvimx/nvim/docs/demo/profile/config XDG_DATA_HOME=/Users/aimuzov/Projects/lazyvimx/nvim/docs/demo/profile/data XDG_STATE_HOME=/Users/aimuzov/Projects/lazyvimx/nvim/docs/demo/profile/state XDG_CACHE_HOME=/Users/aimuzov/Projects/lazyvimx/nvim/docs/demo/profile/cache"
 Enter
 Type "rm -f /tmp/vhs-demo.sock; (sh drive.sh 3 5 ' cr' 3 'ciwcart_total' 2.5 '<CR>' >/dev/null 2>&1 &)"
 Enter
