@@ -15,7 +15,7 @@
 > [!TIP]
 > **🇷🇺 Русская версия:** [README.ru.md](README.ru.md)
 
-**An enhancement layer on top of [LazyVim](https://github.com/LazyVim/LazyVim): 49 optional
+**An enhancement layer on top of [LazyVim](https://github.com/LazyVim/LazyVim): 50 optional
 extras and 39 plugin overrides.**
 
 The idea is simple: LazyVim stays untouched, and everything else — UI polish, navigation,
