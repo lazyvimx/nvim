@@ -1,10 +1,10 @@
-![lazyvimx](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/banner.jpeg)
+![lazyvimx](https://raw.githubusercontent.com/lazyvimx/nvim/assets/banner.jpeg)
 
 <div align="center">
 
-[![Release](https://img.shields.io/github/v/release/aimuzov/lazyvimx?style=flat-square)](https://github.com/aimuzov/lazyvimx/releases)
-[![License](https://img.shields.io/github/license/aimuzov/lazyvimx?style=flat-square)](https://github.com/aimuzov/lazyvimx/blob/main/LICENSE)
-[![Stars](https://img.shields.io/github/stars/aimuzov/lazyvimx?style=flat-square)](https://github.com/aimuzov/lazyvimx/stargazers)
+[![Release](https://img.shields.io/github/v/release/lazyvimx/nvim?style=flat-square)](https://github.com/lazyvimx/nvim/releases)
+[![License](https://img.shields.io/github/license/lazyvimx/nvim?style=flat-square)](https://github.com/lazyvimx/nvim/blob/main/LICENSE)
+[![Stars](https://img.shields.io/github/stars/lazyvimx/nvim?style=flat-square)](https://github.com/lazyvimx/nvim/stargazers)
 ![Neovim](https://img.shields.io/badge/Neovim-0.10+-green?style=flat-square)
 ![Extras](https://img.shields.io/badge/extras-50-purple?style=flat-square)
 
@@ -82,7 +82,7 @@ Don't enable it, and it's like it doesn't exist.
 
 ```lua
 local lazy_opts = {
-	spec = { { "aimuzov/lazyvimx", import = "lazyvimx.boot" } },
+	spec = { { "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" } },
 
 	install = { colorscheme = { "catppuccin", "tokyonight" } },
 	checker = { enabled = true, notify = false },
@@ -125,7 +125,8 @@ On first launch lazyvimx installs LazyVim and all required plugins by itself.
 local lazy_opts = {
   spec = {
     {
-      "aimuzov/lazyvimx",
+      "lazyvimx/nvim",
+      name = "lazyvimx",
       import = "lazyvimx.boot",
       opts = {
         colorscheme = "catppuccin",
@@ -143,7 +144,8 @@ local lazy_opts = {
 
 ```lua
 return {
-  "aimuzov/lazyvimx",
+  "lazyvimx/nvim",
+  name = "lazyvimx",
   opts = {
     colorscheme = "catppuccin",
     bufferline_groups = {
@@ -373,7 +375,7 @@ A mode for the VSCode Neovim extension:
 
 ## 🤝 Contributing
 
-Bugs and ideas go to [issues](https://github.com/aimuzov/lazyvimx/issues). How the project
+Bugs and ideas go to [issues](https://github.com/lazyvimx/nvim/issues). How the project
 works and how to write your own extra — in [Contributing](CONTRIBUTING.md).
 
 ## 📄 License

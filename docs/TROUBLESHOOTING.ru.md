@@ -23,7 +23,7 @@
 1. Проверьте импорт boot-модуля:
 
    ```lua
-   { "aimuzov/lazyvimx", import = "lazyvimx.boot" }
+   { "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" }
    ```
 
 2. Проверьте, зарегистрирован ли источник экстр (должна быть запись с иконкой 󰬟):
@@ -47,7 +47,7 @@
 
 ### Опции из setup() игнорируются
 
-1. Опции должны попадать в спек плагина `"aimuzov/lazyvimx"` (поле `opts`) или в явный вызов
+1. Опции должны попадать в спек плагина `"lazyvimx"` (поле `opts`) или в явный вызов
    `require("lazyvimx").setup()`
 2. Проверьте результат слияния:
 
@@ -285,7 +285,7 @@ brew install trash
 ## 🆘 Куда идти за помощью
 
 1. [FAQ](FAQ.ru.md)
-2. [Issues на GitHub](https://github.com/aimuzov/lazyvimx/issues)
+2. [Issues на GitHub](https://github.com/lazyvimx/nvim/issues)
 3. [Обсуждение в Telegram](https://t.me/aimuzov_dotfiles)
 
 В issue приложите:
@@ -296,7 +296,7 @@ brew install trash
   ```lua
   local lazy_opts = {
   	spec = {
-  		{ "aimuzov/lazyvimx", import = "lazyvimx.boot" },
+  		{ "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" },
   		{ import = "lazyvimx.extras.core.all" },
   	},
   }

@@ -23,7 +23,7 @@ Typical problems and ways to fix them.
 1. Check the boot module import:
 
    ```lua
-   { "aimuzov/lazyvimx", import = "lazyvimx.boot" }
+   { "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" }
    ```
 
 2. Check whether the extras source is registered (there should be an entry with the 󰬟
@@ -48,7 +48,7 @@ Typical problems and ways to fix them.
 
 ### setup() options are ignored
 
-1. Options must land in the `"aimuzov/lazyvimx"` plugin spec (the `opts` field) or an
+1. Options must land in the `"lazyvimx"` plugin spec (the `opts` field) or an
    explicit `require("lazyvimx").setup()` call
 2. Check the merge result:
 
@@ -288,7 +288,7 @@ Without it neo-tree deletes files the regular way.
 ## 🆘 Getting Help
 
 1. [FAQ](FAQ.md)
-2. [GitHub Issues](https://github.com/aimuzov/lazyvimx/issues)
+2. [GitHub Issues](https://github.com/lazyvimx/nvim/issues)
 3. [Telegram discussion](https://t.me/aimuzov_dotfiles)
 
 In an issue include:
@@ -299,7 +299,7 @@ In an issue include:
   ```lua
   local lazy_opts = {
   	spec = {
-  		{ "aimuzov/lazyvimx", import = "lazyvimx.boot" },
+  		{ "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" },
   		{ import = "lazyvimx.extras.core.all" },
   	},
   }

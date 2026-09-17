@@ -54,7 +54,8 @@ return {
 
 ```lua
 return {
-	"aimuzov/lazyvimx",
+	"lazyvimx/nvim",
+	name = "lazyvimx",
 	opts = {
 		colorscheme = "tokyonight",
 		bufferline_groups = {

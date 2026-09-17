@@ -86,7 +86,7 @@ return {
 	{ "LazyVim/LazyVim", import = "lazyvim.plugins" },
 	{ "LazyVim/LazyVim", opts = set_colorscheme },
 
-	{ "aimuzov/lazyvimx", dependencies = { "LazyVim/LazyVim" }, vscode = true, config = true },
+	{ "lazyvimx/nvim", name = "lazyvimx", dependencies = { "LazyVim/LazyVim" }, vscode = true, config = true },
 
 	{ import = "plugins", enabled = has_plugins_dir },
 }

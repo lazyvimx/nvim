@@ -45,7 +45,7 @@ lazyvimx — слой поверх LazyVim, а не форк: ничего в La
 
 ### boot.lua
 
-Точка входа — `{ "aimuzov/lazyvimx", import = "lazyvimx.boot" }`. Модуль возвращает
+Точка входа — `{ "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" }`. Модуль возвращает
 последовательность спеков:
 
 ```lua
@@ -59,7 +59,7 @@ return {
 	{ "LazyVim/LazyVim", import = "lazyvim.plugins" },            -- 6
 	{ "LazyVim/LazyVim", opts = set_colorscheme },                -- 7
 
-	{ "aimuzov/lazyvimx", dependencies = { "LazyVim/LazyVim" }, vscode = true, config = true }, -- 8
+	{ "lazyvimx/nvim", name = "lazyvimx", dependencies = { "LazyVim/LazyVim" }, vscode = true, config = true }, -- 8
 
 	{ import = "plugins", enabled = has_plugins_dir },            -- 9
 }

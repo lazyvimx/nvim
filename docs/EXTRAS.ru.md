@@ -115,7 +115,7 @@ Core — не фичи, а «сборные» модули: они включа�
 
 ### ui.better-colorcolumn
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-colorcolumn.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-colorcolumn.gif)
 
 **Импорт:** `lazyvimx.extras.ui.better-colorcolumn`
 
@@ -126,7 +126,7 @@ Core — не фичи, а «сборные» модули: они включа�
 
 ### ui.better-cursorline
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-cursorline.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-cursorline.gif)
 
 **Импорт:** `lazyvimx.extras.ui.better-cursorline`
 
@@ -137,7 +137,7 @@ Cursorline только в активном окне; номер строки п
 
 ### ui.better-diagnostic
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-diagnostic.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-diagnostic.gif)
 
 **Импорт:** `lazyvimx.extras.ui.better-diagnostic`
 
@@ -148,7 +148,7 @@ virtual text отключается.
 
 ### ui.better-explorer
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-explorer.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-explorer.gif)
 
 **Импорт:** `lazyvimx.extras.ui.better-explorer`
 
@@ -162,7 +162,7 @@ virtual text отключается.
 
 ### ui.better-float
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-float.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-float.gif)
 
 **Импорт:** `lazyvimx.extras.ui.better-float`
 
@@ -171,7 +171,7 @@ Mason, LSP-окон, neo-tree, noice, терминалов Snacks, lazygit и fz
 
 ### ui.better-insert-mode
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-insert-mode.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-insert-mode.gif)
 
 **Импорт:** `lazyvimx.extras.ui.better-insert-mode`
 
@@ -180,7 +180,7 @@ Mason, LSP-окон, neo-tree, noice, терминалов Snacks, lazygit и fz
 
 ### ui.better-linenumbers
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-linenumbers.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-linenumbers.gif)
 
 **Импорт:** `lazyvimx.extras.ui.better-linenumbers`
 
@@ -189,7 +189,7 @@ Mason, LSP-окон, neo-tree, noice, терминалов Snacks, lazygit и fz
 
 ### ui.better-live-rename
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-live-rename.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-live-rename.gif)
 
 **Импорт:** `lazyvimx.extras.ui.better-live-rename`
 
@@ -212,7 +212,7 @@ OSC 9;4) вместо уведомлений в редакторе. Показы
 
 ### ui.better-reference-highlight
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-reference-highlight.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-reference-highlight.gif)
 
 **Импорт:** `lazyvimx.extras.ui.better-reference-highlight`
 
@@ -223,7 +223,7 @@ OSC 9;4) вместо уведомлений в редакторе. Показы
 
 ### ui.better-whitespace
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-better-whitespace.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-better-whitespace.gif)
 
 **Импорт:** `lazyvimx.extras.ui.better-whitespace`
 
@@ -234,7 +234,7 @@ OSC 9;4) вместо уведомлений в редакторе. Показы
 
 ### ui.bolder-separators
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-bolder-separators.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-bolder-separators.gif)
 
 **Импорт:** `lazyvimx.extras.ui.bolder-separators`
 
@@ -242,7 +242,7 @@ OSC 9;4) вместо уведомлений в редакторе. Показы
 
 ### ui.diff-view
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-diff-view.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-diff-view.gif)
 
 **Импорт:** `lazyvimx.extras.ui.diff-view`
 
@@ -255,7 +255,7 @@ Diffview с размерами панелей из общей layout-утили�
 
 ### ui.highlighted-ansi-escape
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-highlighted-ansi-escape.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-highlighted-ansi-escape.gif)
 
 **Импорт:** `lazyvimx.extras.ui.highlighted-ansi-escape`
 
@@ -268,7 +268,7 @@ Diffview с размерами панелей из общей layout-утили�
 
 ### ui.highlighted-colors
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-highlighted-colors.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-highlighted-colors.gif)
 
 **Импорт:** `lazyvimx.extras.ui.highlighted-colors`
 
@@ -278,7 +278,7 @@ Diffview с размерами панелей из общей layout-утили�
 
 ### ui.peek-preview
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-peek-preview.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-peek-preview.gif)
 
 **Импорт:** `lazyvimx.extras.ui.peek-preview`
 
@@ -291,7 +291,7 @@ Peek-окно для LSP-локаций, как в VSCode. Если резуль
 
 ### ui.scrollbar
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-scrollbar.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-scrollbar.gif)
 
 **Импорт:** `lazyvimx.extras.ui.scrollbar`
 
@@ -301,7 +301,7 @@ Peek-окно для LSP-локаций, как в VSCode. Если резуль
 
 ### ui.simple-mode
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-simple-mode.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-simple-mode.gif)
 
 **Импорт:** `lazyvimx.extras.ui.simple-mode`
 
@@ -310,7 +310,7 @@ statusline, bufferline, neo-tree и номера строк.
 
 ### ui.showkeys
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-showkeys.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-showkeys.gif)
 
 **Импорт:** `lazyvimx.extras.ui.showkeys`
 
@@ -322,7 +322,7 @@ statusline, bufferline, neo-tree и номера строк.
 
 ### ui.symbol-usage
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-symbol-usage.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-symbol-usage.gif)
 
 **Импорт:** `lazyvimx.extras.ui.symbol-usage`
 
@@ -333,7 +333,7 @@ statusline, bufferline, neo-tree и номера строк.
 
 ### ui.winbar
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/ui-winbar.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-winbar.gif)
 
 **Импорт:** `lazyvimx.extras.ui.winbar`
 
@@ -348,7 +348,7 @@ Winbar с иконкой типа файла и коротким путём (pre
 
 ### coding.comments
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/coding-comments.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/coding-comments.gif)
 
 **Импорт:** `lazyvimx.extras.coding.comments`
 
@@ -377,7 +377,7 @@ Winbar с иконкой типа файла и коротким путём (pre
 
 ### motions.better-cursor-move
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/motions-better-cursor-move.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/motions-better-cursor-move.gif)
 
 **Импорт:** `lazyvimx.extras.motions.better-cursor-move`
 
@@ -387,7 +387,7 @@ Winbar с иконкой типа файла и коротким путём (pre
 
 ### motions.better-move-between-words
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/motions-better-move-between-words.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/motions-better-move-between-words.gif)
 
 **Импорт:** `lazyvimx.extras.motions.better-move-between-words`
 
@@ -403,7 +403,7 @@ Winbar с иконкой типа файла и коротким путём (pre
 
 ### motions.langmapper
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/motions-langmapper.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/motions-langmapper.gif)
 
 **Импорт:** `lazyvimx.extras.motions.langmapper`
 
@@ -417,7 +417,7 @@ langmap для RU-раскладки, хак `getcharstr` (чтобы работ
 
 ### motions.sibling-move
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/motions-sibling-move.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/motions-sibling-move.gif)
 
 **Импорт:** `lazyvimx.extras.motions.sibling-move`
 
@@ -431,7 +431,7 @@ langmap для RU-раскладки, хак `getcharstr` (чтобы работ
 
 ### motions.sibling-swap
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/motions-sibling-swap.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/motions-sibling-swap.gif)
 
 **Импорт:** `lazyvimx.extras.motions.sibling-swap`
 
@@ -444,7 +444,7 @@ langmap для RU-раскладки, хак `getcharstr` (чтобы работ
 
 ### motions.splitting-joining-blocks
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/motions-splitting-joining-blocks.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/motions-splitting-joining-blocks.gif)
 
 **Импорт:** `lazyvimx.extras.motions.splitting-joining-blocks`
 
@@ -504,7 +504,7 @@ langmap для RU-раскладки, хак `getcharstr` (чтобы работ
 
 ### buf.tab-scope
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/buf-tab-scope.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/buf-tab-scope.gif)
 
 **Импорт:** `lazyvimx.extras.buf.tab-scope`
 
@@ -521,7 +521,7 @@ langmap для RU-раскладки, хак `getcharstr` (чтобы работ
 
 ### git.conflicts
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/git-conflicts.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/git-conflicts.gif)
 
 **Импорт:** `lazyvimx.extras.git.conflicts`
 
@@ -630,7 +630,7 @@ tree-sitter-грамматикой.
 
 ### colorschemes.nord
 
-![Демо](https://raw.githubusercontent.com/aimuzov/lazyvimx/assets/demo/colorschemes-nord.gif)
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/colorschemes-nord.gif)
 
 **Импорт:** `lazyvimx.extras.colorschemes.nord` (входит в `core.colorschemes`)
 

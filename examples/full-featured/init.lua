@@ -5,7 +5,8 @@ local lazy_opts = {
 	spec = {
 		-- lazyvimx with boot import and configuration
 		{
-			"aimuzov/lazyvimx",
+			"lazyvimx/nvim",
+			name = "lazyvimx",
 			import = "lazyvimx.boot",
 			opts = {
 				colorscheme = "catppuccin",
