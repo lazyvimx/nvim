@@ -2,6 +2,8 @@ local desc = "Fold a selection into an inline label, keeping its highlights and 
 
 -- Every fold lives in its own namespace, so unfolding drops all of its marks at once
 local folds = {}
+-- The last cursor position per window, to tell which way the cursor went over a fold
+local prev_pos = {}
 
 local function line_len(row)
 	return #vim.api.nvim_buf_get_lines(0, row, row + 1, true)[1]
@@ -38,6 +40,10 @@ local function fold(first, last, start_col, end_col, label)
 
 	folds[ns] = true
 
+	-- The selection may end on a hidden line, so the cursor goes to the label right away
+	vim.api.nvim_win_set_cursor(0, { first + 1, start_col })
+	prev_pos[vim.api.nvim_get_current_win()] = { first, start_col }
+
 	vim.opt_local.conceallevel = math.max(vim.wo.conceallevel, 2)
 	-- Otherwise the cursor line reveals the text right next to the label
 	vim.opt_local.concealcursor = "nvic"
@@ -69,7 +75,8 @@ local function fold_selection()
 	local region = vim.fn.getregionpos(vim.fn.getpos("v"), vim.fn.getpos("."), { type = mode })
 	local head, tail = region[1][1], region[#region][2]
 	local first, last = head[2] - 1, tail[2] - 1
-	local start_col = mode == "V" and 0 or head[3] - 1
+	-- A linewise fold keeps the indent, so the label stays in line with the code around
+	local start_col = mode == "V" and #vim.fn.getline(first + 1):match("^%s*") or head[3] - 1
 	local end_col = math.min(tail[3], line_len(last))
 
 	vim.api.nvim_feedkeys(vim.keycode("<esc>"), "nx", false)
@@ -121,8 +128,6 @@ local function snap(row, col, prev)
 		end
 	end
 end
-
-local prev_pos = {}
 
 local function keep_cursor_visible()
 	if next(folds) == nil then
