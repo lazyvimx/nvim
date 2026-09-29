@@ -5,8 +5,15 @@ import os
 import re
 
 # Без целевой экстры сценарий теряет смысл: yazi не открывается,
-# темы nord в пикере нет, а showkeys — сама плашка записи.
-skip = {"ui-better-explorer.tape", "colorschemes-nord.tape", "ui-showkeys.tape", "hero.tape"}
+# темы nord в пикере нет, а showkeys — сама плашка записи. Без inline-fold
+# zF падает на E350, и набранная следом метка уходит в буфер командами.
+skip = {
+    "ui-better-explorer.tape",
+    "colorschemes-nord.tape",
+    "ui-showkeys.tape",
+    "hero.tape",
+    "ui-inline-fold.tape",
+}
 
 os.makedirs("tapes-before", exist_ok=True)
 

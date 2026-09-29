@@ -278,6 +278,8 @@ Diffview с размерами панелей из общей layout-утили�
 
 ### ui.inline-fold
 
+![Демо](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-inline-fold.gif)
+
 **Импорт:** `lazyvimx.extras.ui.inline-fold`
 
 Сворачивает выделение в метку: `Some text EXAMPLE WORDS text` → `Some text … text`.

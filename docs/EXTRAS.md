@@ -281,6 +281,8 @@ A 󱓻 indicator in the color of each hex code at the end of the line.
 
 ### ui.inline-fold
 
+![Demo](https://raw.githubusercontent.com/lazyvimx/nvim/assets/demo/ui-inline-fold.gif)
+
 **Import:** `lazyvimx.extras.ui.inline-fold`
 
 Folds a selection into a label: `Some text EXAMPLE WORDS text` → `Some text … text`.
