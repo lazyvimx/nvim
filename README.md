@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/github/license/lazyvimx/nvim?style=flat-square)](https://github.com/lazyvimx/nvim/blob/main/LICENSE)
 [![Stars](https://img.shields.io/github/stars/lazyvimx/nvim?style=flat-square)](https://github.com/lazyvimx/nvim/stargazers)
 ![Neovim](https://img.shields.io/badge/Neovim-0.10+-green?style=flat-square)
-![Extras](https://img.shields.io/badge/extras-50-purple?style=flat-square)
+![Extras](https://img.shields.io/badge/extras-51-purple?style=flat-square)
 
 ## [📖 Documentation: lazyvimx.aimuzov.online](https://lazyvimx.aimuzov.online/)
 
@@ -15,7 +15,7 @@
 > [!TIP]
 > **🇷🇺 Русская версия:** [README.ru.md](README.ru.md)
 
-**An enhancement layer on top of [LazyVim](https://github.com/LazyVim/LazyVim): 49 optional
+**An enhancement layer on top of [LazyVim](https://github.com/LazyVim/LazyVim): 51 optional
 extras and 39 plugin overrides.**
 
 The idea is simple: LazyVim stays untouched, and everything else — UI polish, navigation,
@@ -70,7 +70,7 @@ Don't enable it, and it's like it doesn't exist.
 **New to lazyvimx?** Ready-to-use configurations live in [examples/](examples/):
 
 - **[Minimal](examples/minimal/)** — overrides only, the fastest start
-- **[Full-Featured](examples/full-featured/)** — all 50 extras
+- **[Full-Featured](examples/full-featured/)** — all 51 extras
 - **[VSCode User](examples/vscode-user/)** — for the VSCode Neovim extension
 - **[Russian Keyboard](examples/russian-keyboard/)** — with Russian layout support
 
@@ -180,9 +180,9 @@ lazyvimx/
 ├── lua/lazyvimx/
 │   ├── boot.lua              # Bootstrap configuration
 │   ├── init.lua              # Main module with setup()
-│   ├── extras/               # Optional modules (50 + 5 core)
+│   ├── extras/               # Optional modules (51 + 5 core)
 │   │   ├── core/             # Bundles: all, overrides, extras, keys, colorschemes
-│   │   ├── ui/               # Interface (21)
+│   │   ├── ui/               # Interface (22)
 │   │   ├── motions/          # Navigation (6)
 │   │   ├── buf/              # Buffers (4)
 │   │   ├── git/              # Git (4)
@@ -233,7 +233,7 @@ Inside:
 
 ## 📚 Documentation
 
-- **[EXTRAS.md](docs/EXTRAS.md)** — reference for all 50 extras ([🇷🇺](docs/EXTRAS.ru.md))
+- **[EXTRAS.md](docs/EXTRAS.md)** — reference for all 51 extras ([🇷🇺](docs/EXTRAS.ru.md))
 - **[CONFIGURATION.md](docs/CONFIGURATION.md)** — configuration and options ([🇷🇺](docs/CONFIGURATION.ru.md))
 - **[KEYBINDINGS.md](docs/KEYBINDINGS.md)** — all keymaps ([🇷🇺](docs/KEYBINDINGS.ru.md))
 - **[ARCHITECTURE.md](docs/ARCHITECTURE.md)** — how it all works ([🇷🇺](docs/ARCHITECTURE.ru.md))
@@ -358,7 +358,7 @@ A mode for the VSCode Neovim extension:
 
 ## 📊 Stats
 
-- **50 optional extras** across 11 categories
+- **51 optional extras** across 11 categories
 - **39 overrides** for deep customization
 - **Hundreds of custom highlights** for Catppuccin, Tokyo Night, and Nord
 - **60+ custom keymaps**

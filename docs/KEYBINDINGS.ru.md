@@ -107,6 +107,8 @@
 | `<leader>c\` | n     | Разбить блок                          | motions.splitting-joining-blocks |
 | `<leader>cj` | n     | Склеить блок                          | motions.splitting-joining-blocks |
 | `<leader>ac` | n, x  | Скопировать позицию курсора/выделения | core.overrides (sidekick)        |
+| `zF`         | x     | Свернуть выделение в метку            | ui.inline-fold                   |
+| `zF`         | n     | Развернуть фолд под курсором          | ui.inline-fold                   |
 
 `<leader>ac` кладёт в буфер обмена ссылку вида `@файл :L10:C5` — удобно для промптов
 AI-агентам.

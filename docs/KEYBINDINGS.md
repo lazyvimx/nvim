@@ -107,6 +107,8 @@ Resizing works for edgy sidebars too — the new size is remembered (see
 | `<leader>c\` | n    | Split a block                           | motions.splitting-joining-blocks |
 | `<leader>cj` | n    | Join a block                            | motions.splitting-joining-blocks |
 | `<leader>ac` | n, x | Copy the cursor/selection position      | core.overrides (sidekick)        |
+| `zF`         | x    | Fold the selection into a label         | ui.inline-fold                   |
+| `zF`         | n    | Unfold the inline fold under the cursor | ui.inline-fold                   |
 
 `<leader>ac` puts a reference like `@file :L10:C5` on the clipboard — handy for prompts to
 AI agents.

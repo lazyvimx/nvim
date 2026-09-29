@@ -48,6 +48,7 @@ return {
 	{ import = "lazyvimx.extras.ui.bolder-separators" },
 	{ import = "lazyvimx.extras.ui.highlighted-ansi-escape" },
 	{ import = "lazyvimx.extras.ui.highlighted-colors" },
+	{ import = "lazyvimx.extras.ui.inline-fold" },
 	{ import = "lazyvimx.extras.ui.diff-view" },
 	{ import = "lazyvimx.extras.ui.simple-mode" },
 	{ import = "lazyvimx.extras.ui.showkeys" },
