@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.11.0](https://github.com/lazyvimx/nvim/compare/v1.10.0...v1.11.0) (2026-09-29)
+
+### Features
+
+* **demo:** add the inline-fold tape ([5e1e830](https://github.com/lazyvimx/nvim/commit/5e1e830c0547f79c67f7c0faaa4583998bc26073))
+* **demo:** record mp4 alongside the gifs ([9a7b1bb](https://github.com/lazyvimx/nvim/commit/9a7b1bb6394e727d9b7e4476dd86dd456011d62d))
+* **ui:** add inline-fold extra for folding a selection into a label ([0700d6a](https://github.com/lazyvimx/nvim/commit/0700d6af6ed43c98c1168d1133cb936d924d3cfc))
+
+### Bug Fixes
+
+* **ui:** keep the indent and the cursor on inline fold labels ([e1599ad](https://github.com/lazyvimx/nvim/commit/e1599adb0802fd92acbe4b592ce432dd8df112db))
+
+### Refactoring
+
+* move the repository to lazyvimx/nvim ([90a56e3](https://github.com/lazyvimx/nvim/commit/90a56e393bd4d6ed4d1c3612980f8b36beb3d35f))
+
 ## [1.10.0](https://github.com/aimuzov/lazyvimx/compare/v1.9.1...v1.10.0) (2026-08-30)
 
 ### Features
