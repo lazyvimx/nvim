@@ -28,6 +28,7 @@ local override_highlights = function(hl, c)
 	hl.LineNr = { fg = c.fg_gutter }
 	hl.FloatBorder = { fg = blend(c.bg, c.blue2, 50) }
 	hl.FloatTitle = { fg = blend(c.bg, c.blue2, 50) }
+	hl.InlineFold = { fg = c.blue, bold = true }
 	hl.LspReferenceRead = { bg = "none", fg = blend(c.fg, c.magenta2, 50), bold = true }
 	hl.LspReferenceText = { bg = "none", fg = blend(c.fg, c.magenta2, 50), bold = true }
 	hl.LspReferenceWrite = { bg = "none", fg = blend(c.fg, c.magenta2, 50), bold = true }

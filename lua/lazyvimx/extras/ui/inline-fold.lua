@@ -1,5 +1,3 @@
-local desc = "Fold a selection into an inline label, keeping its highlights and extmarks"
-
 -- Every fold lives in its own namespace, so unfolding drops all of its marks at once
 local folds = {}
 -- The last cursor position per window, to tell which way the cursor went over a fold
@@ -156,13 +154,6 @@ local function keep_cursor_visible()
 	prev_pos[win] = pos
 end
 
--- The label is a part of the line, so it keeps the line background unlike a native fold
-local function set_hl()
-	local folded = vim.api.nvim_get_hl(0, { name = "Folded", link = false })
-
-	vim.api.nvim_set_hl(0, "InlineFold", { fg = folded.fg, italic = folded.italic, default = true })
-end
-
 local function unfold_at_cursor()
 	local ns = fold_at_cursor()
 
@@ -175,18 +166,18 @@ local function unfold_at_cursor()
 end
 
 return {
-	"lazyvimx/nvim",
-	name = "lazyvimx",
-	desc = desc,
+	"LazyVim/LazyVim",
+	desc = "Fold a selection into an inline label, keeping its highlights and extmarks",
+
+	keys = {
+		{ "zF", fold_selection, mode = "x", desc = "Fold selection inline" },
+		{ "zF", unfold_at_cursor, desc = "Unfold inline fold" },
+	},
+
 	opts = function()
-		local group = vim.api.nvim_create_augroup("lazyvimx_inline_fold", { clear = true })
-
-		set_hl()
-
-		vim.api.nvim_create_autocmd("ColorScheme", { group = group, callback = set_hl })
-		vim.api.nvim_create_autocmd("CursorMoved", { group = group, callback = keep_cursor_visible })
-
-		vim.keymap.set("x", "zF", fold_selection, { desc = "Fold selection inline" })
-		vim.keymap.set("n", "zF", unfold_at_cursor, { desc = "Unfold inline fold" })
+		vim.api.nvim_create_autocmd("CursorMoved", {
+			group = vim.api.nvim_create_augroup("lazyvimx_inline_fold", { clear = true }),
+			callback = keep_cursor_visible,
+		})
 	end,
 }

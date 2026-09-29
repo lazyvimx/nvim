@@ -46,6 +46,7 @@ local override_highlights = function(hl, colors)
 	hl.FlashPromptSep = { fg = blend(c.bg_dark, c.fg, 50) }
 	hl.FloatBorder = { fg = blend(c.bg, c.cyan, 50) }
 	hl.FloatTitle = { fg = blend(c.bg, c.cyan, 50) }
+	hl.InlineFold = { fg = c.blue, bold = true }
 	hl.LspReferenceRead = { bg = "none", fg = blend(c.fg, c.purple, 50), bold = true }
 	hl.LspReferenceText = { bg = "none", fg = blend(c.fg, c.purple, 50), bold = true }
 	hl.LspReferenceWrite = { bg = "none", fg = blend(c.fg, c.purple, 50), bold = true }
