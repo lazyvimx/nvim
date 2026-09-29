@@ -127,7 +127,7 @@ The household is derived from the theme name's prefix up to the first hyphen:
 ```
 extras/
 ├── core/          # Bundles (5): all, colorschemes, extras, keys, overrides
-├── ui/            # Interface (21)
+├── ui/            # Interface (22)
 ├── motions/       # Navigation (6)
 ├── buf/           # Buffers (4)
 ├── git/           # Git (4)
@@ -140,7 +140,7 @@ extras/
 └── test/          # Testing (1)
 ```
 
-50 feature extras; descriptions are in [Extras](EXTRAS.md).
+51 feature extras; descriptions are in [Extras](EXTRAS.md).
 
 ### Extra Template
 

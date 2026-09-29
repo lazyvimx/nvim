@@ -3,13 +3,13 @@
 > [!TIP]
 > **🇷🇺 Русская версия:** [EXTRAS.ru.md](EXTRAS.ru.md)
 
-The complete reference for all 50 lazyvimx extras.
+The complete reference for all 51 lazyvimx extras.
 
 ## 📑 Table of Contents
 
 - [Overview](#📖-overview)
 - [Core Modules](#🧩-core-modules)
-- [UI (21)](#🎨-ui)
+- [UI (22)](#🎨-ui)
 - [Coding (2)](#✍️-coding)
 - [Motions (6)](#🧭-motions)
 - [Buf (4)](#🗂️-buf)
@@ -278,6 +278,19 @@ plugin log.
 A 󱓻 indicator in the color of each hex code at the end of the line.
 
 **Plugin:** [`brenoprata10/nvim-highlight-colors`](https://github.com/brenoprata10/nvim-highlight-colors)
+
+### ui.inline-fold
+
+**Import:** `lazyvimx.extras.ui.inline-fold`
+
+Folds a selection into a label: `Some text EXAMPLE WORDS text` → `Some text … text`.
+Native folds are linewise only and can't be created manually with `foldmethod=expr`, so the
+text stays in the buffer and gets concealed behind virtual text — after unfolding, highlights
+and extmarks stay in place. A linewise selection collapses into a single line with the label;
+a charwise one across several lines keeps the tail of its last line on a line of its own.
+
+**Keymaps:** `zF` in visual mode — fold the selection (asks for a label), `zF` in normal
+mode — unfold under the cursor.
 
 ### ui.peek-preview
 
@@ -732,7 +745,7 @@ by Jest itself, the `CI=true` environment variable.
 
 | Category     | Count  | What's inside                            |
 | ------------ | ------ | ---------------------------------------- |
-| UI           | 21     | Interface and looks                      |
+| UI           | 22     | Interface and looks                      |
 | Motions      | 6      | Navigation and code movement             |
 | Buf          | 4      | Buffer management                        |
 | Git          | 4      | Git and GitLab                           |
@@ -743,7 +756,7 @@ by Jest itself, the `CI=true` environment variable.
 | Colorschemes | 1      | Colorschemes                             |
 | DAP          | 1      | Debugging                                |
 | Test         | 1      | Testing                                  |
-| **Total**    | **50** | plus 5 core modules for enabling bundles |
+| **Total**    | **51** | plus 5 core modules for enabling bundles |
 
 ## 🚀 Where to Start
 
