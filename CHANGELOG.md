@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.12.0](https://github.com/lazyvimx/nvim/compare/v1.11.0...v1.12.0) (2026-10-03)
+
+### Features
+
+* **ui:** add a bold InlineFold highlight to tokyonight and nord ([9626b2c](https://github.com/lazyvimx/nvim/commit/9626b2cee43057785f4c0badc4e98f3cc0c2843e))
+
+### Bug Fixes
+
+* **linting:** stop mason-lspconfig from installing deprecated stylelint-lsp ([fc14065](https://github.com/lazyvimx/nvim/commit/fc140659ba4fe0557d9e135fcea4b4dc7ec8ea17))
+
+### Refactoring
+
+* **ui:** set inline-fold keymaps through the LazyVim spec ([0b7d2f2](https://github.com/lazyvimx/nvim/commit/0b7d2f2cfac5597962c859ee396c670f4aecb8ec))
+
 ## [1.11.0](https://github.com/lazyvimx/nvim/compare/v1.10.0...v1.11.0) (2026-09-29)
 
 ### Features
