@@ -10,6 +10,10 @@ on:
         type: choice
         options: [auto, patch, minor, major]
         default: auto
+      site_only:
+        description: Only rebuild the site, skip the release
+        type: boolean
+        default: false
 
 permissions:
   contents: write # push main/develop + tag, create the GitHub Release
@@ -20,6 +24,7 @@ concurrency:
 
 jobs:
   release:
+    if: ${{ !inputs.site_only }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -60,6 +65,13 @@ jobs:
       - name: Sync develop with the release commit
         run: git push origin main:develop
 
+  # A separate job so the site can be rebuilt on its own: a skipped release isn't a failure,
+  # while a failed one still keeps the site on the previous version.
+  site:
+    needs: release
+    if: ${{ !failure() && !cancelled() }}
+    runs-on: ubuntu-latest
+    steps:
       # The site reads the version from develop at build time. GITHUB_TOKEN can't dispatch
       # workflows in another repo, hence a fine-grained PAT with actions:write on lazyvimx/site.
       - name: Rebuild the site
