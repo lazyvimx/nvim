@@ -1,6 +1,6 @@
 module.exports = {
   git: {
-    commitArgs: ["-S"],
+    requireBranch: "main",
     commitMessage: "chore(release): v${version}",
     tagAnnotation: "v${version}",
     tagName: "v${version}",
