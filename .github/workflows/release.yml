@@ -1,0 +1,57 @@
+name: release
+
+on:
+  workflow_dispatch:
+    inputs:
+      increment:
+        description: Version increment (auto = from conventional commits)
+        type: choice
+        options: [auto, patch, minor, major]
+        default: auto
+
+permissions:
+  contents: write # push main/develop + tag, create the GitHub Release
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # full history for conventional-changelog and tags
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Configure git identity
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fast-forward main to develop
+        run: |
+          git fetch origin develop
+          git merge --ff-only origin/develop
+
+      - name: Run release-it
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          INCREMENT: ${{ inputs.increment }}
+        run: |
+          if [ "$INCREMENT" = "auto" ]; then
+            npx release-it --ci
+          else
+            npx release-it "$INCREMENT" --ci
+          fi
+
+      - name: Sync develop with the release commit
+        run: git push origin main:develop
