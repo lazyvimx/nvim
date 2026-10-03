@@ -1,6 +1,8 @@
 name: release
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       increment:
@@ -37,7 +39,9 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+      # A push to main already carries the release content; a manual run pulls in develop.
       - name: Fast-forward main to develop
+        if: github.event_name == 'workflow_dispatch'
         run: |
           git fetch origin develop
           git merge --ff-only origin/develop
@@ -47,7 +51,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           INCREMENT: ${{ inputs.increment }}
         run: |
-          if [ "$INCREMENT" = "auto" ]; then
+          if [ -z "$INCREMENT" ] || [ "$INCREMENT" = "auto" ]; then
             npx release-it --ci
           else
             npx release-it "$INCREMENT" --ci
