@@ -55,3 +55,15 @@ jobs:
 
       - name: Sync develop with the release commit
         run: git push origin main:develop
+
+      # The site reads the version from develop at build time. GITHUB_TOKEN can't dispatch
+      # workflows in another repo, hence a fine-grained PAT with actions:write on lazyvimx/site.
+      - name: Rebuild the site
+        env:
+          GH_TOKEN: ${{ secrets.SITE_DEPLOY_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::SITE_DEPLOY_TOKEN is not set, run the lazyvimx/site deploy manually"
+            exit 0
+          fi
+          gh workflow run deploy.yml -R lazyvimx/site
