@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.12.2](https://github.com/lazyvimx/nvim/compare/v1.12.1...v1.12.2) (2026-10-03)
+
+### Bug Fixes
+
+* **ci:** strip whitespace from the site deploy token ([5199f3d](https://github.com/lazyvimx/nvim/commit/5199f3d45d9a9b0ed430e64b13f864619c53ed40))
+
 ## [1.12.1](https://github.com/lazyvimx/nvim/compare/v1.12.0...v1.12.1) (2026-10-03)
 
 ## [1.12.0](https://github.com/lazyvimx/nvim/compare/v1.11.0...v1.12.0) (2026-10-03)
