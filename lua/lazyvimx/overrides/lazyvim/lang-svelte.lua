@@ -39,7 +39,7 @@ return {
 		opts = function(_, opts)
 			if LazyVim.has_extra("lang.svelte") then
 				if LazyVim.has_extra("linting.eslint") then
-					opts.servers.stylelint_lsp = opts.servers.stylelint_lsp or { filetypes = {} }
+					opts.servers.stylelint_lsp = opts.servers.stylelint_lsp or { filetypes = {}, mason = false }
 					table.insert(opts.servers.stylelint_lsp.filetypes, "svelte")
 				end
 			end
