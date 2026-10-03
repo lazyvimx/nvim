@@ -78,8 +78,14 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.SITE_DEPLOY_TOKEN }}
         run: |
+          # Stray whitespace in a pasted secret breaks the auth header, and gh gets a 401.
+          GH_TOKEN="$(printf '%s' "$GH_TOKEN" | tr -d '[:space:]')"
+          export GH_TOKEN
+
           if [ -z "$GH_TOKEN" ]; then
             echo "::warning::SITE_DEPLOY_TOKEN is not set, run the lazyvimx/site deploy manually"
             exit 0
           fi
+
+          echo "token length: ${#GH_TOKEN}"
           gh workflow run deploy.yml -R lazyvimx/site
