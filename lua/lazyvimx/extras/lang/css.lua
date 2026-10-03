@@ -48,7 +48,7 @@ return {
 		opts = function(_, opts)
 			if LazyVim.has_extra("linting.eslint") then
 				if opts.servers.stylelint_lsp == nil then
-					opts.servers.stylelint_lsp = { filetypes = {} }
+					opts.servers.stylelint_lsp = { filetypes = {}, mason = false }
 				end
 
 				table.insert(opts.servers.stylelint_lsp.filetypes, "css")

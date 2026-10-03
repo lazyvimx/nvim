@@ -22,7 +22,7 @@ return {
 				return
 			end
 
-			opts.servers.stylelint_lsp = opts.servers.stylelint_lsp or { filetypes = {} }
+			opts.servers.stylelint_lsp = opts.servers.stylelint_lsp or { filetypes = {}, mason = false }
 			opts.servers.stylelint_lsp.root_dir = root_dir
 			-- `validate` is extended with `svelte` and others: without it the server won't send the
 			-- matching documents to stylelint. Extra filetypes are harmless — only actually attached
