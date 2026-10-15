@@ -187,7 +187,7 @@ Overrides change the settings of existing plugins without replacing them. Every 
 
 ```
 overrides/
-├── lazyvim/     # LazyVim (9): language specifics (clangd, oxc, svelte), chezmoi,
+├── lazyvim/     # LazyVim (10): language specifics (astro, clangd, oxc, svelte), chezmoi,
 │                #   theme auto-switching, VSCode, pretty path, the context menu
 ├── snacks/      # Snacks.nvim (9): the dashboard, lazygit (theme, follow worktree),
 │                #   disabled animations and backdrop, repeatable buffer deletion
@@ -196,7 +196,7 @@ overrides/
                  #   lazy, lspconfig, lualine, neo-tree, noice, sidekick, tokyonight, trouble
 ```
 
-39 modules total. A category is imported as a whole — lazy.nvim picks up every `.lua` file
+40 modules total. A category is imported as a whole — lazy.nvim picks up every `.lua` file
 in the directory:
 
 ```lua

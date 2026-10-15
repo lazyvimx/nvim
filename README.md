@@ -20,7 +20,7 @@
 <p align="center">Optional extras and plugin overrides, documented at <a href="https://lazyvimx.aimuzov.online">lazyvimx.aimuzov.online</a></p>
 
 **An enhancement layer on top of [LazyVim](https://github.com/LazyVim/LazyVim): 51 optional
-extras and 39 plugin overrides.**
+extras and 40 plugin overrides.**
 
 The idea is simple: LazyVim stays untouched, and everything else — UI polish, navigation,
 git workflow, Russian keyboard support — is enabled piece by piece. Don't like an extra?
@@ -197,8 +197,8 @@ lazyvimx/
 │   │   ├── colorschemes/     # Colorschemes (1)
 │   │   ├── dap/              # Debugging (1)
 │   │   └── test/             # Testing (1)
-│   ├── overrides/            # Plugin customizations (39)
-│   │   ├── lazyvim/          # LazyVim (9)
+│   ├── overrides/            # Plugin customizations (40)
+│   │   ├── lazyvim/          # LazyVim (10)
 │   │   ├── snacks/           # Snacks.nvim (9)
 │   │   ├── bufferline/       # Bufferline (6)
 │   │   └── other/            # Other plugins (15)
@@ -220,7 +220,7 @@ Enable everything at once — `core.all` via `:LazyExtras` or an import:
 
 Inside:
 
-- **overrides** — all 39 plugin customizations
+- **overrides** — all 40 plugin customizations
 - **extras** — all feature extras
 - **colorschemes** — additional colorschemes
 - **keys** — custom keymaps
@@ -363,7 +363,7 @@ A mode for the VSCode Neovim extension:
 ## 📊 Stats
 
 - **51 optional extras** across 11 categories
-- **39 overrides** for deep customization
+- **40 overrides** for deep customization
 - **Hundreds of custom highlights** for Catppuccin, Tokyo Night, and Nord
 - **60+ custom keymaps**
 

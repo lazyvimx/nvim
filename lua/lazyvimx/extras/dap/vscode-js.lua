@@ -40,7 +40,7 @@ return {
 				end
 			end
 
-			for _, language in ipairs({ "typescript", "javascript", "svelte" }) do
+			for _, language in ipairs({ "typescript", "javascript", "svelte", "astro" }) do
 				dap.configurations[language] = {
 					{
 						type = "pwa-chrome",

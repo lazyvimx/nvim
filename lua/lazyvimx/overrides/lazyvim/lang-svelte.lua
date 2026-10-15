@@ -13,17 +13,7 @@ return {
 			if LazyVim.has_extra("lang.svelte") then
 				opts.formatters["prettier_svelte"] = prettier_svelte_formatter()
 
-				require("conform").formatters.stylelint = function(bufnr)
-					local filetype = vim.api.nvim_get_option_value("filetype", { buf = bufnr })
-					local prepend_args = filetype == "svelte" and { "--custom-syntax", "postcss-html" } or {}
-					local command =
-						require("conform.util").find_executable({ "node_modules/.bin/stylelint" }, "stylelint")
-
-					return {
-						command = command,
-						prepend_args = prepend_args,
-					}
-				end
+				require("conform").formatters.stylelint = require("lazyvimx.util.stylelint").conform_formatter
 
 				if LazyVim.has_extra("formatting.prettier") then
 					opts.formatters_by_ft = opts.formatters_by_ft or {}

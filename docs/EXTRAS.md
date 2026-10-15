@@ -62,7 +62,7 @@ All of lazyvimx: overrides, every extra, colorschemes, and custom keymaps.
 **Includes:**
 
 - `core.colorschemes` — additional colorschemes
-- `core.overrides` — all 39 overrides
+- `core.overrides` — all 40 overrides
 - `core.extras` — all 49 extras from the registry
 - `core.keys` — custom keymaps
 
@@ -76,9 +76,9 @@ notification if something is missing: `coding.mini-surround`, `coding.yanky`, `u
 
 **Recommended:** yes
 
-All plugin overrides — 39 modules across 4 categories:
+All plugin overrides — 40 modules across 4 categories:
 
-- LazyVim (9 modules)
+- LazyVim (10 modules)
 - Snacks.nvim (9 modules)
 - Bufferline (6 modules)
 - other plugins (15 modules)
@@ -643,7 +643,7 @@ the project (e.g. via npm) — a global binary is not picked up.
 
 Installs stylelint-language-server via Mason. With the LazyVim `linting.eslint` extra
 enabled it configures `stylelint_lsp`: the project root comes from LazyVim's detector, and
-the list of validated types is extended (css, scss, less, html, vue, svelte, and more).
+the list of validated types is extended (css, scss, less, html, vue, svelte, astro, and more).
 
 ---
 
@@ -669,7 +669,7 @@ lualine and bufferline themes, a dark (`nord`) and a light (`nord-light`) varian
 
 **Import:** `lazyvimx.extras.dap.vscode-js`
 
-Debugging JavaScript/TypeScript (and Svelte) via `js-debug-adapter` from Mason. Three
+Debugging JavaScript/TypeScript (and Svelte, Astro) via `js-debug-adapter` from Mason. Three
 configurations:
 
 1. Launch Chrome to debug the client (localhost:8080)

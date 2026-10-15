@@ -17,7 +17,7 @@
 ### What is lazyvimx?
 
 An enhancement layer for [LazyVim](https://github.com/LazyVim/LazyVim): 50 optional extras
-and 39 plugin overrides. LazyVim stays the foundation, lazyvimx adds interface and workflow
+and 40 plugin overrides. LazyVim stays the foundation, lazyvimx adds interface and workflow
 polish — and only what you've enabled.
 
 ### How is lazyvimx different from LazyVim?
