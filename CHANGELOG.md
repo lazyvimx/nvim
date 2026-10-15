@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.13.0](https://github.com/lazyvimx/nvim/compare/v1.12.3...v1.13.0) (2026-10-15)
+
+
+### Features
+
+* **lang:** format and lint Astro like Svelte ([9de0fd8](https://github.com/lazyvimx/nvim/commit/9de0fd8fe007055507bedd22235d1a466886fc51))
+* **lang:** format and lint Astro like Svelte ([a03f330](https://github.com/lazyvimx/nvim/commit/a03f330a9b1ebb36aaa06a1c474170286e0b1f7a))
+
+
+### Bug Fixes
+
+* **formatting:** pick oxfmt only by its own config ([9d2f3d7](https://github.com/lazyvimx/nvim/commit/9d2f3d72dbc8280a859874d0a1c9f40acb2df47c))
+
 ## [1.12.3](https://github.com/lazyvimx/nvim/compare/v1.12.2...v1.12.3) (2026-10-15)
 
 
