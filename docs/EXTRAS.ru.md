@@ -61,7 +61,7 @@ Core — не фичи, а «сборные» модули: они включа�
 **Включает:**
 
 - `core.colorschemes` — дополнительные цветовые схемы
-- `core.overrides` — все 39 оверрайдов
+- `core.overrides` — все 40 оверрайдов
 - `core.extras` — все 49 экстр из реестра
 - `core.keys` — кастомные кеймапы
 
@@ -75,9 +75,9 @@ Core — не фичи, а «сборные» модули: они включа�
 
 **Рекомендуется:** да
 
-Все оверрайды плагинов — 39 модулей в 4 категориях:
+Все оверрайды плагинов — 40 модулей в 4 категориях:
 
-- LazyVim (9 модулей)
+- LazyVim (10 модулей)
 - Snacks.nvim (9 модулей)
 - Bufferline (6 модулей)
 - прочие плагины (15 модулей)
@@ -637,7 +637,7 @@ tree-sitter-грамматикой.
 
 Устанавливает stylelint-language-server через Mason. При включённой экстре LazyVim
 `linting.eslint` настраивает `stylelint_lsp`: корень проекта определяется детектором LazyVim,
-а список проверяемых типов расширен (css, scss, less, html, vue, svelte и другие).
+а список проверяемых типов расширен (css, scss, less, html, vue, svelte, astro и другие).
 
 ---
 
@@ -663,7 +663,7 @@ bufferline, тёмный (`nord`) и светлый (`nord-light`) вариан�
 
 **Импорт:** `lazyvimx.extras.dap.vscode-js`
 
-Отладка JavaScript/TypeScript (и Svelte) через `js-debug-adapter` из Mason. Три конфигурации:
+Отладка JavaScript/TypeScript (и Svelte, Astro) через `js-debug-adapter` из Mason. Три конфигурации:
 
 1. Запуск Chrome для отладки клиента (localhost:8080)
 2. Подключение к процессу `node --inspect`

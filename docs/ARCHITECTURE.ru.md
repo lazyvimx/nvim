@@ -186,7 +186,7 @@ end
 
 ```
 overrides/
-├── lazyvim/     # LazyVim (9): язык-специфика (clangd, oxc, svelte), chezmoi,
+├── lazyvim/     # LazyVim (10): язык-специфика (astro, clangd, oxc, svelte), chezmoi,
 │                #   автопереключение темы, VSCode, pretty path, контекстное меню
 ├── snacks/      # Snacks.nvim (9): дашборд, lazygit (тема, follow worktree),
 │                #   отключение анимаций и backdrop, повторяемое удаление буферов
@@ -195,7 +195,7 @@ overrides/
                  #   lazy, lspconfig, lualine, neo-tree, noice, sidekick, tokyonight, trouble
 ```
 
-Итого 39 модулей. Категория импортируется целиком — lazy.nvim подхватывает все `.lua`-файлы
+Итого 40 модулей. Категория импортируется целиком — lazy.nvim подхватывает все `.lua`-файлы
 директории:
 
 ```lua
