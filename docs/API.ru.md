@@ -242,14 +242,14 @@ opts.keys = {
 Точка входа: `{ "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" }`. Внутренние функции, напрямую
 не вызываются:
 
-| Функция                    | Что делает                                                                                    |
-| -------------------------- | --------------------------------------------------------------------------------------------- |
+| Функция                    | Что делает                                                                                           |
+| -------------------------- | ---------------------------------------------------------------------------------------------------- |
 | `set_global()`             | `vim.g.lazyvim_check_order = false`, `vim.g.xtras_prios = {}`, `vim.g.lazyvim_explorer = "neo-tree"` |
-| `vimopts_create_autocmd()` | подписка на `LazyVimOptionsDefaults` для установки опций Vim                                  |
-| `update_root_lsp_ignore()` | добавляет `eslint` в `vim.g.root_lsp_ignore`                                                  |
-| `insert_extras()`          | регистрирует источник экстр lazyvimx (иконка 󰬟) в UI `:LazyExtras`                            |
-| `set_colorscheme()`        | ставит цветовую схему через `get_flavor()`                                                         |
-| `has_plugins_dir()`        | подключает `lua/plugins/*.lua` пользователя, если они есть                                    |
+| `vimopts_create_autocmd()` | подписка на `LazyVimOptionsDefaults` для установки опций Vim                                         |
+| `update_root_lsp_ignore()` | добавляет `eslint` в `vim.g.root_lsp_ignore`                                                         |
+| `insert_extras()`          | регистрирует источник экстр lazyvimx (иконка 󰬟) в UI `:LazyExtras`                                   |
+| `set_colorscheme()`        | ставит цветовую схему через `get_flavor()`                                                           |
+| `has_plugins_dir()`        | подключает `lua/plugins/*.lua` пользователя, если они есть                                           |
 
 Порядок спеков в `boot.lua` и bootstrap-процесс описаны в
 [Архитектура](ARCHITECTURE.ru.md#🚀-процесс-загрузки).
@@ -258,11 +258,11 @@ opts.keys = {
 
 ## 📋 Сводка
 
-| Модуль         | Функции                                                                                                             | Назначение          |
-| -------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| `lazyvimx`     | `setup()`, `config`                                                                                                 | Конфигурация        |
-| `util.general` | `color_blend()`, `popen_get_result()`, `theme_is_dark()`, `get_flavor()`, `get_dotfiles_path()`, `has_extra()`, `warn_missing_extra()` | Общие утилиты       |
-| `util.layout`  | `get_size()`, `get_size_create()`, `increase_create()`, `decrease_create()`, `step`                                  | Размеры панелей     |
+| Модуль         | Функции                                                                                                                                | Назначение      |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| `lazyvimx`     | `setup()`, `config`                                                                                                                    | Конфигурация    |
+| `util.general` | `color_blend()`, `popen_get_result()`, `theme_is_dark()`, `get_flavor()`, `get_dotfiles_path()`, `has_extra()`, `warn_missing_extra()` | Общие утилиты   |
+| `util.layout`  | `get_size()`, `get_size_create()`, `increase_create()`, `decrease_create()`, `step`                                                    | Размеры панелей |
 
 ## 📚 См. также
 

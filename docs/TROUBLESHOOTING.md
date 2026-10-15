@@ -22,16 +22,16 @@ Typical problems and ways to fix them.
 
 1. Check the boot module import:
 
-   ```lua
-   { "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" }
-   ```
+    ```lua
+    { "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" }
+    ```
 
 2. Check whether the extras source is registered (there should be an entry with the 󰬟
    icon):
 
-   ```vim
-   :lua vim.print(require("lazyvim.util.extras").sources)
-   ```
+    ```vim
+    :lua vim.print(require("lazyvim.util.extras").sources)
+    ```
 
 3. Restart Neovim and update the plugins: `:Lazy update`.
 
@@ -41,10 +41,10 @@ Typical problems and ways to fix them.
 2. Look at the log: `:Lazy log`
 3. As a last resort — reinstall the plugins from scratch:
 
-   ```bash
-   rm -rf ~/.local/share/nvim/lazy
-   nvim
-   ```
+    ```bash
+    rm -rf ~/.local/share/nvim/lazy
+    nvim
+    ```
 
 ### setup() options are ignored
 
@@ -52,9 +52,9 @@ Typical problems and ways to fix them.
    explicit `require("lazyvimx").setup()` call
 2. Check the merge result:
 
-   ```vim
-   :lua vim.print(require("lazyvimx").config)
-   ```
+    ```vim
+    :lua vim.print(require("lazyvimx").config)
+    ```
 
 ## 🧩 Extras
 
@@ -62,36 +62,36 @@ Typical problems and ways to fix them.
 
 1. Restart Neovim — extras apply on startup
 2. Check the dependencies. Some extras require others:
-   - `git.gitlab` → `ui.diff-view`
-   - `dap.vscode-js` → the LazyVim `dap.core` extra
-   - `test.jest` → the LazyVim `test.core` extra
-   - `ui.better-progressbar` → the Ghostty terminal
+    - `git.gitlab` → `ui.diff-view`
+    - `dap.vscode-js` → the LazyVim `dap.core` extra
+    - `test.jest` → the LazyVim `test.core` extra
+    - `ui.better-progressbar` → the Ghostty terminal
 3. Look at the warnings: `:messages` (search for "Missing extra")
 4. Check that the extra is actually loaded:
 
-   ```vim
-   :lua print(require("lazyvimx.util.general").has_extra("ui.winbar"))
-   ```
+    ```vim
+    :lua print(require("lazyvimx.util.general").has_extra("ui.winbar"))
+    ```
 
 ### Buffer groups don't appear
 
 1. The `add-groups` override is needed (part of `core.overrides`):
 
-   ```lua
-   { import = "lazyvimx.extras.core.overrides" }
-   ```
+    ```lua
+    { import = "lazyvimx.extras.core.overrides" }
+    ```
 
 2. Check the config:
 
-   ```vim
-   :lua vim.print(require("lazyvimx").config.bufferline_groups)
-   ```
+    ```vim
+    :lua vim.print(require("lazyvimx").config.bufferline_groups)
+    ```
 
 3. Test the pattern on the current file:
 
-   ```vim
-   :lua print(vim.fn.expand("%"):match("%.tsx$"))
-   ```
+    ```vim
+    :lua print(vim.fn.expand("%"):match("%.tsx$"))
+    ```
 
 ### symbol-usage counters aren't showing
 
@@ -111,29 +111,29 @@ Typical problems and ways to fix them.
    [Configuration](CONFIGURATION.md#auto-switching-with-the-system))
 3. Check the theme detection:
 
-   ```vim
-   :lua print(require("lazyvimx.util.general").theme_is_dark())
-   ```
+    ```vim
+    :lua print(require("lazyvimx.util.general").theme_is_dark())
+    ```
 
 4. A manual check:
 
-   ```vim
-   :lua vim.api.nvim_exec_autocmds("Signal", {})
-   ```
+    ```vim
+    :lua vim.api.nvim_exec_autocmds("Signal", {})
+    ```
 
 ### The wrong theme variant gets picked
 
 1. Look at the households:
 
-   ```vim
-   :lua vim.print(require("lazyvimx").config.colorscheme_households)
-   ```
+    ```vim
+    :lua vim.print(require("lazyvimx").config.colorscheme_households)
+    ```
 
 2. What the variant selection returns:
 
-   ```vim
-   :lua print(require("lazyvimx.util.general").get_flavor())
-   ```
+    ```vim
+    :lua print(require("lazyvimx.util.general").get_flavor())
+    ```
 
 3. If `perf.restore-last-colorscheme` is enabled — the last used variant gets restored;
    switch the theme manually and the choice will be remembered
@@ -151,12 +151,12 @@ Typical problems and ways to fix them.
 
 1. Profile:
 
-   ```bash
-   nvim --startuptime startup.log
-   sort -nk2 startup.log | tail -20
-   ```
+    ```bash
+    nvim --startuptime startup.log
+    sort -nk2 startup.log | tail -20
+    ```
 
-   and `:Lazy profile`
+    and `:Lazy profile`
 
 2. Enable fewer extras: `core.overrides` + targeted imports instead of `core.all`
 
@@ -179,17 +179,17 @@ Typical problems and ways to fix them.
 
 1. Is `core.keys` enabled?
 
-   ```lua
-   { import = "lazyvimx.extras.core.keys" }
-   ```
+    ```lua
+    { import = "lazyvimx.extras.core.keys" }
+    ```
 
 2. Keymaps are bound to plugins: no plugin (the extra is off) — no keymap. See the
    "Requires" column in [Keybindings](KEYBINDINGS.md)
 3. Who took the key:
 
-   ```vim
-   :verbose map <leader>cr
-   ```
+    ```vim
+    :verbose map <leader>cr
+    ```
 
 4. Leader is space: `:echo mapleader`
 
@@ -197,16 +197,16 @@ Typical problems and ways to fix them.
 
 1. Is the extra enabled?
 
-   ```lua
-   { import = "lazyvimx.extras.motions.langmapper" }
-   ```
+    ```lua
+    { import = "lazyvimx.extras.motions.langmapper" }
+    ```
 
 2. Restart Neovim after enabling it
 3. Check the mapping of a specific key:
 
-   ```vim
-   :verbose map ц
-   ```
+    ```vim
+    :verbose map ц
+    ```
 
 ### A keymap conflict
 
@@ -237,9 +237,9 @@ return {
    at the cursor as a single line
 2. Check the configuration:
 
-   ```vim
-   :lua vim.print(vim.diagnostic.config())
-   ```
+    ```vim
+    :lua vim.print(vim.diagnostic.config())
+    ```
 
 ### No LSP or autoformat on an sshfs mount
 
@@ -253,17 +253,17 @@ want — disable the extra.
 
 1. Check the command:
 
-   ```bash
-   defaults read -g AppleInterfaceStyle
-   ```
+    ```bash
+    defaults read -g AppleInterfaceStyle
+    ```
 
-   In dark mode it returns "Dark", in light mode — an error (that's normal)
+    In dark mode it returns "Dark", in light mode — an error (that's normal)
 
 2. Check from Neovim:
 
-   ```vim
-   :lua print(require("lazyvimx.util.general").theme_is_dark())
-   ```
+    ```vim
+    :lua print(require("lazyvimx.util.general").theme_is_dark())
+    ```
 
 ### Files skip the trash
 
@@ -281,9 +281,9 @@ Without it neo-tree deletes files the regular way.
 2. The sync fires on the `LazyUpdate` event — that is, after `:Lazy update`
 3. The override is part of `core.overrides`; individually:
 
-   ```lua
-   { import = "lazyvimx.overrides.lazyvim.auto-apply-chezmoi-on-lazy-update" }
-   ```
+    ```lua
+    { import = "lazyvimx.overrides.lazyvim.auto-apply-chezmoi-on-lazy-update" }
+    ```
 
 ## 🆘 Getting Help
 
@@ -296,14 +296,14 @@ In an issue include:
 - the Neovim version (`:version`) and the OS
 - reproduction steps on a minimal config:
 
-  ```lua
-  local lazy_opts = {
-  	spec = {
-  		{ "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" },
-  		{ import = "lazyvimx.extras.core.all" },
-  	},
-  }
-  ```
+    ```lua
+    local lazy_opts = {
+    	spec = {
+    		{ "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" },
+    		{ import = "lazyvimx.extras.core.all" },
+    	},
+    }
+    ```
 
 - error messages: `:Lazy log`, `:messages`
 

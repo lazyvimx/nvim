@@ -1,0 +1,25 @@
+name: Check
+
+# Форматирование и линтеры. На main их вызывает release.yml, поэтому отдельный
+# прогон там был бы дублем.
+on:
+  push:
+    branches-ignore: [main]
+  pull_request:
+  workflow_call:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      # Node, StyLua и selene ставятся версиями из mise.toml.
+      - uses: jdx/mise-action@v5
+      - run: npm ci
+      - run: npm run format:check
+      - run: npm run lint

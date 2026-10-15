@@ -1,19 +1,23 @@
-![lazyvimx](https://raw.githubusercontent.com/lazyvimx/nvim/assets/banner.jpeg)
+<p align="center">
+	<img src="https://img.shields.io/badge/English-0066cc?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCAzMCI+PGNsaXBQYXRoIGlkPSJ0Ij48cGF0aCBkPSJNMzAsMTVoMzB2MTV6djE1aC0zMHpoLTMwdi0xNXp2LTE1aDMweiIvPjwvY2xpcFBhdGg+PHBhdGggZD0iTTAsMHYzMGg2MHYtMzB6IiBmaWxsPSIjMDEyMTY5Ii8+PHBhdGggZD0iTTAsMCA2MCwzME02MCwwIDAsMzAiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI2Ii8+PHBhdGggZD0iTTAsMCA2MCwzME02MCwwIDAsMzAiIGNsaXAtcGF0aD0idXJsKCN0KSIgc3Ryb2tlPSIjQzgxMDJFIiBzdHJva2Utd2lkdGg9IjQiLz48cGF0aCBkPSJNMzAsMHYzME0wLDE1aDYwIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMTAiLz48cGF0aCBkPSJNMzAsMHYzME0wLDE1aDYwIiBzdHJva2U9IiNDODEwMkUiIHN0cm9rZS13aWR0aD0iNiIvPjwvc3ZnPg==" alt="English">
+	<a href="README.ru.md"><img src="https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-555?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5IDYiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoOXYzSDB6Ii8+PHBhdGggZmlsbD0iIzAwMzlhNiIgZD0iTTAgMmg5djJIMHoiLz48cGF0aCBmaWxsPSIjZDUyYjFlIiBkPSJNMCA0aDl2MkgweiIvPjwvc3ZnPg==" alt="Русский"></a>
+</p>
 
-<div align="center">
+<p align="center">
+	<a href="https://lazyvimx.aimuzov.online"><img src=".github/assets/banner.en.jpg" alt="lazyvimx: an enhancement layer for LazyVim" width="100%"></a>
+</p>
 
-[![Release](https://img.shields.io/github/v/release/lazyvimx/nvim?style=flat-square)](https://github.com/lazyvimx/nvim/releases)
-[![License](https://img.shields.io/github/license/lazyvimx/nvim?style=flat-square)](https://github.com/lazyvimx/nvim/blob/main/LICENSE)
-[![Stars](https://img.shields.io/github/stars/lazyvimx/nvim?style=flat-square)](https://github.com/lazyvimx/nvim/stargazers)
-![Neovim](https://img.shields.io/badge/Neovim-0.10+-green?style=flat-square)
-![Extras](https://img.shields.io/badge/extras-51-purple?style=flat-square)
+<p align="center">
+	<a href="https://github.com/lazyvimx/nvim/actions/workflows/release.yml"><img src="https://img.shields.io/github/actions/workflow/status/lazyvimx/nvim/release.yml?branch=main&label=release" alt="Release workflow"></a>
+	<a href="https://github.com/lazyvimx/nvim/releases"><img src="https://img.shields.io/github/v/release/lazyvimx/nvim?label=version" alt="Version"></a>
+	<a href="https://neovim.io"><img src="https://img.shields.io/badge/neovim-0.10%2B-57a143?logo=neovim&logoColor=white" alt="Neovim 0.10+"></a>
+	<a href="https://github.com/LazyVim/LazyVim"><img src="https://img.shields.io/badge/LazyVim-extras%2051-2e7de9" alt="LazyVim extras"></a>
+	<a href="https://lazyvimx.aimuzov.online"><img src="https://img.shields.io/website?url=https%3A%2F%2Flazyvimx.aimuzov.online&label=docs" alt="Docs site"></a>
+	<a href="LICENSE"><img src="https://img.shields.io/github/license/lazyvimx/nvim" alt="License"></a>
+</p>
 
-## [📖 Documentation: lazyvimx.aimuzov.online](https://lazyvimx.aimuzov.online/)
-
-</div>
-
-> [!TIP]
-> **🇷🇺 Русская версия:** [README.ru.md](README.ru.md)
+<h3 align="center">An enhancement layer on top of LazyVim</h3>
+<p align="center">Optional extras and plugin overrides, documented at <a href="https://lazyvimx.aimuzov.online">lazyvimx.aimuzov.online</a></p>
 
 **An enhancement layer on top of [LazyVim](https://github.com/LazyVim/LazyVim): 51 optional
 extras and 39 plugin overrides.**
@@ -371,7 +375,7 @@ A mode for the VSCode Neovim extension:
 
 ## 📈 Activity
 
-![Repo Activity](https://repobeats.axiom.co/api/embed/f5453bcfc3ad93005a4d3b73d0681450ff7ca5d3.svg "Repobeats analytics image")
+![Repo Activity](https://repobeats.axiom.co/api/embed/f5453bcfc3ad93005a4d3b73d0681450ff7ca5d3.svg 'Repobeats analytics image')
 
 ## 🤝 Contributing
 

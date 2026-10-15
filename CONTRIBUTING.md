@@ -96,28 +96,38 @@ Documentation improvements are always welcome:
 ### Local Development
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/lazyvimx/nvim.git ~/.local/share/nvim/lazy/lazyvimx
-   ```
+
+    ```bash
+    git clone https://github.com/lazyvimx/nvim.git ~/.local/share/nvim/lazy/lazyvimx
+    ```
 
 2. Create a test configuration:
-   ```lua
-   -- ~/.config/nvim-test/init.lua
-   local lazy_path = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-   vim.opt.rtp:prepend(lazy_path)
-   
-   require("lazy").setup({
-     spec = {
-       { dir = "~/.local/share/nvim/lazy/lazyvimx", import = "lazyvimx.boot" },
-       { import = "lazyvimx.extras.core.all" },
-     },
-   })
-   ```
+
+    ```lua
+    -- ~/.config/nvim-test/init.lua
+    local lazy_path = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+    vim.opt.rtp:prepend(lazy_path)
+
+    require("lazy").setup({
+      spec = {
+        { dir = "~/.local/share/nvim/lazy/lazyvimx", import = "lazyvimx.boot" },
+        { import = "lazyvimx.extras.core.all" },
+      },
+    })
+    ```
 
 3. Test your changes:
-   ```bash
-   NVIM_APPNAME=nvim-test nvim
-   ```
+
+    ```bash
+    NVIM_APPNAME=nvim-test nvim
+    ```
+
+4. Run the same checks as CI. Node, StyLua and selene come from [`mise.toml`](mise.toml):
+    ```bash
+    mise install && npm ci
+    npm run format:check && npm run lint
+    ```
+    `npm run format` fixes the formatting of Lua (StyLua) and Markdown, JSON and YAML (Prettier).
 
 ## Project Structure
 
@@ -289,10 +299,10 @@ refactor(util): simplify color blending function
 ## Pull Request Process
 
 1. **Update documentation** for any user-facing changes
-2. **Update CHANGELOG.md** under "Unreleased" section
+2. **Leave CHANGELOG.md alone**: release-please writes it from the PR titles
 3. **Update extras count** if you added/removed extras
 4. **Test thoroughly** in a clean Neovim instance
-5. **Ensure commits** follow conventional commits format
+5. **Title the PR** in the conventional commits format, it becomes the changelog entry
 6. **Link issues** that the PR addresses
 7. **Request review** from maintainers
 8. **Address feedback** promptly and professionally
@@ -311,10 +321,9 @@ Brief description of changes
 
 ## Checklist
 - [ ] Documentation updated
-- [ ] CHANGELOG.md updated
 - [ ] Tested in clean environment
 - [ ] Follows coding guidelines
-- [ ] Commits follow conventional commits
+- [ ] The PR title follows conventional commits
 
 ## Related Issues
 Closes #<issue_number>
@@ -332,6 +341,7 @@ If you have questions:
 ## Recognition
 
 Contributors will be recognized in:
+
 - README.md contributors section
 - Release notes
 - Project documentation

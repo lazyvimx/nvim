@@ -1,0 +1,11 @@
+# Стандартная библиотека для selene: Lua 5.1 (LuaJIT в Neovim), глобал vim
+# и то, что LazyVim и snacks.nvim кладут в _G до загрузки экстр.
+base: lua51
+name: neovim
+globals:
+  vim:
+    any: true
+  LazyVim:
+    any: true
+  Snacks:
+    any: true

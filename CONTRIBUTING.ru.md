@@ -96,28 +96,38 @@ Overrides изменяют существующие конфигурации п�
 ### Локальная разработка
 
 1. Клонируйте репозиторий:
-   ```bash
-   git clone https://github.com/lazyvimx/nvim.git ~/.local/share/nvim/lazy/lazyvimx
-   ```
+
+    ```bash
+    git clone https://github.com/lazyvimx/nvim.git ~/.local/share/nvim/lazy/lazyvimx
+    ```
 
 2. Создайте тестовую конфигурацию:
-   ```lua
-   -- ~/.config/nvim-test/init.lua
-   local lazy_path = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-   vim.opt.rtp:prepend(lazy_path)
 
-   require("lazy").setup({
-     spec = {
-       { dir = "~/.local/share/nvim/lazy/lazyvimx", import = "lazyvimx.boot" },
-       { import = "lazyvimx.extras.core.all" },
-     },
-   })
-   ```
+    ```lua
+    -- ~/.config/nvim-test/init.lua
+    local lazy_path = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+    vim.opt.rtp:prepend(lazy_path)
+
+    require("lazy").setup({
+      spec = {
+        { dir = "~/.local/share/nvim/lazy/lazyvimx", import = "lazyvimx.boot" },
+        { import = "lazyvimx.extras.core.all" },
+      },
+    })
+    ```
 
 3. Протестируйте изменения:
-   ```bash
-   NVIM_APPNAME=nvim-test nvim
-   ```
+
+    ```bash
+    NVIM_APPNAME=nvim-test nvim
+    ```
+
+4. Прогоните те же проверки, что в CI. Node, StyLua и selene берутся из [`mise.toml`](mise.toml):
+    ```bash
+    mise install && npm ci
+    npm run format:check && npm run lint
+    ```
+    `npm run format` поправит форматирование Lua (StyLua) и Markdown, JSON, YAML (Prettier).
 
 ## Структура проекта
 
@@ -289,10 +299,10 @@ refactor(util): simplify color blending function
 ## Процесс создания Pull Request
 
 1. **Обновите документацию** для любых изменений, видимых пользователю
-2. **Обновите CHANGELOG.md** в разделе "Unreleased"
+2. **Не трогайте CHANGELOG.md**: его пишет release-please по заголовкам PR
 3. **Обновите счётчик extras**, если вы добавили/удалили extras
 4. **Тщательно протестируйте** в чистом экземпляре Neovim
-5. **Убедитесь, что коммиты** следуют формату conventional commits
+5. **Назовите PR** в формате conventional commits, заголовок станет записью в журнале изменений
 6. **Свяжите issues**, которые решает PR
 7. **Запросите ревью** у мейнтейнеров
 8. **Обрабатывайте обратную связь** оперативно и профессионально
@@ -311,10 +321,9 @@ refactor(util): simplify color blending function
 
 ## Чек-лист
 - [ ] Документация обновлена
-- [ ] CHANGELOG.md обновлён
 - [ ] Протестировано в чистом окружении
 - [ ] Следует руководству по написанию кода
-- [ ] Коммиты следуют conventional commits
+- [ ] Заголовок PR по conventional commits
 
 ## Связанные Issues
 Closes #<issue_number>
@@ -332,6 +341,7 @@ Closes #<issue_number>
 ## Признание
 
 Контрибьюторы будут отмечены в:
+
 - Разделе контрибьюторов в README.md
 - Примечаниях к релизам
 - Документации проекта

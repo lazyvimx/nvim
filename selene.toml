@@ -1,0 +1,5 @@
+std = "neovim"
+
+[lints]
+# Спеки lazy.nvim -- смешанные таблицы по своей природе: { "owner/repo", opts = {} }.
+mixed_table = "allow"

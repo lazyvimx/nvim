@@ -1,39 +1,21 @@
 {
-  "name": "lazyvimx",
-  "version": "1.12.2",
-  "description": "TBD...",
-  "private": true,
-  "scripts": {
-    "commit": "git cz",
-    "release": "release-it"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lazyvimx/nvim.git"
-  },
-  "keywords": [
-    "nvim"
-  ],
-  "author": "Aleksey Imuzov <github@aimuzov.online>",
-  "bugs": {
-    "url": "https://github.com/lazyvimx/nvim/issues"
-  },
-  "homepage": "https://github.com/lazyvimx/nvim#readme",
-  "devDependencies": {
-    "@commitlint/config-conventional": "19.8.1",
-    "@release-it/conventional-changelog": "10.0.1",
-    "commitizen": "4.3.1",
-    "commitlint": "19.8.1",
-    "cz-git": "1.12.0",
-    "release-it": "19.0.4"
-  },
-  "overrides": {
-    "conventional-changelog-conventionalcommits": "9.1.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-git",
-      "czConfig": "./.commitlintrc.js"
-    }
-  }
+	"name": "lazyvimx",
+	"version": "1.12.2",
+	"private": true,
+	"description": "An enhancement layer on top of LazyVim: optional extras and plugin overrides",
+	"license": "Apache-2.0",
+	"repository": "github:lazyvimx/nvim",
+	"homepage": "https://lazyvimx.aimuzov.online",
+	"engines": {
+		"node": "26.11.1"
+	},
+	"scripts": {
+		"format": "stylua . && prettier --write .",
+		"format:check": "stylua --check . && prettier --check .",
+		"lint": "selene lua colors init.lua .nvim.lua"
+	},
+	"devDependencies": {
+		"@aimuzov-projects/infra-site-kit": "github:aimuzov-projects/infra-site-kit#v1.8.0",
+		"prettier": "3.9.9"
+	}
 }
