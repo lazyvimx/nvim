@@ -15,11 +15,11 @@ local function lsp_progress_osc()
 
 			-- Ghostty OSC 9;4 progress bar
 			if value.kind == "end" then
-				io.write("\x1b]9;4;0\x07")
+				io.write("\027]9;4;0\007")
 			elseif value.percentage then
-				io.write(("\x1b]9;4;1;%d\x07"):format(value.percentage))
+				io.write(("\027]9;4;1;%d\007"):format(value.percentage))
 			else
-				io.write("\x1b]9;4;3\x07")
+				io.write("\027]9;4;3\007")
 			end
 
 			vim.api.nvim_echo({ { msg } }, false, {

@@ -28,11 +28,12 @@ return {
 			-- matching documents to stylelint. Extra filetypes are harmless — only actually attached
 			-- ones get validated (those added to `filetypes` in `lang/css.lua` and
 			-- `overrides/lazyvim/lang-svelte.lua`).
-			opts.servers.stylelint_lsp.settings = vim.tbl_deep_extend("force", opts.servers.stylelint_lsp.settings or {}, {
-				stylelint = {
-					validate = { "css", "postcss", "scss", "less", "html", "vue", "svelte" },
-				},
-			})
+			opts.servers.stylelint_lsp.settings =
+				vim.tbl_deep_extend("force", opts.servers.stylelint_lsp.settings or {}, {
+					stylelint = {
+						validate = { "css", "postcss", "scss", "less", "html", "vue", "svelte" },
+					},
+				})
 		end,
 	},
 }

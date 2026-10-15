@@ -278,7 +278,7 @@ return {
 		"nvim-neo-tree/neo-tree.nvim",
 		optional = true,
 
-		opts = function(_, opts)
+		opts = function()
 			vim.api.nvim_create_autocmd({ "TermOpen", "TermClose" }, {
 				callback = vim.schedule_wrap(function()
 					local renderer = require("neo-tree.ui.renderer")

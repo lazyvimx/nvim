@@ -1,15 +1,5 @@
 local blend = require("lazyvimx.util.general").color_blend
 
-local function colors_get(style)
-	local colors = require("tokyonight.colors").setup({
-		style = style ~= "" and style or "moon",
-		on_colors = function() end,
-		on_highlights = override_highlights,
-	})
-
-	return colors
-end
-
 local override_highlights = function(hl, c)
 	hl.BlinkCmpDoc = { bg = c.bg_dark, blend = 15 }
 	hl.BlinkCmpDocBorder = { link = "BlinkCmpDoc" }
@@ -81,6 +71,16 @@ local override_highlights = function(hl, c)
 	hl.WhichKeyBorder = { link = "FloatBorder" }
 	hl.WhichKeyNormal = { link = "FloatNormal" }
 	hl.WinSeparator = { fg = blend(c.bg, c.bg_dark, 60) }
+end
+
+local function colors_get(style)
+	local colors = require("tokyonight.colors").setup({
+		style = style ~= "" and style or "moon",
+		on_colors = function() end,
+		on_highlights = override_highlights,
+	})
+
+	return colors
 end
 
 local override_bufferline_hls = function(colorscheme_name)

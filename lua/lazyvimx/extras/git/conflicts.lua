@@ -10,7 +10,7 @@ return {
 	"akinsho/git-conflict.nvim",
 	desc = "A plugin to visualise and resolve conflicts in neovim",
 
-	opts = function(_, opts)
+	opts = function()
 		local throttle = require("git-conflict.utils").throttle
 		local notifier_detected = throttle(interval, notifier_create("detected", vim.log.levels.WARN))
 		local notifier_resolved = throttle(interval, notifier_create("resolved", vim.log.levels.INFO))
