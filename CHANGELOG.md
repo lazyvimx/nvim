@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.3](https://github.com/lazyvimx/nvim/compare/v1.12.2...v1.12.3) (2026-10-15)
+
+
+### Bug Fixes
+
+* clean up what selene reports ([b4129f6](https://github.com/lazyvimx/nvim/commit/b4129f6913c9ff7c1db08048264aef20bf8b6a14))
+
 ## [1.12.2](https://github.com/lazyvimx/nvim/compare/v1.12.1...v1.12.2) (2026-10-03)
 
 ### Bug Fixes
