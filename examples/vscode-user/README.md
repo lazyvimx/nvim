@@ -36,12 +36,12 @@
 2. Скопируйте `init.lua` в `~/.config/nvim/init.lua`
 3. Укажите пути в settings.json VSCode:
 
-   ```json
-   {
-     "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
-     "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.lua"
-   }
-   ```
+    ```json
+    {
+      "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+      "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.lua"
+    }
+    ```
 
 4. Перезапустите VSCode
 

@@ -66,21 +66,21 @@ In VSCode the `<leader>\`, `<leader>ch`, `<leader>ll`, `<leader>lx` keymaps aren
 
 ## 🧭 Navigation and Motions
 
-| Keymap    | Mode    | Description                        | Requires                          |
-| --------- | ------- | ---------------------------------- | --------------------------------- |
-| `[x`      | n       | Jump to the treesitter context     | LazyVim ui.treesitter-context     |
-| `w`       | n, o, x | Word forward (by subwords)         | motions.better-move-between-words |
-| `b`       | n, o, x | Word backward (by subwords)        | motions.better-move-between-words |
-| `e`       | n, o, x | End of word (by subwords)          | motions.better-move-between-words |
-| `cw`      | n       | Change word (by subwords)          | motions.better-move-between-words |
-| `<C-f>`   | i       | Word forward in insert             | motions.better-move-between-words |
-| `<C-b>`   | i       | Word backward in insert            | motions.better-move-between-words |
-| `<C-A-h>` | n       | Node to the left (treewalker)      | motions.sibling-move              |
-| `<C-A-l>` | n       | Node to the right (treewalker)     | motions.sibling-move              |
-| `<C-A-j>` | n       | Node below (treewalker)            | motions.sibling-move              |
-| `<C-A-k>` | n       | Node above (treewalker)            | motions.sibling-move              |
-| `<C-A-.>` | n       | Swap the node with the lower one   | motions.sibling-move              |
-| `<C-A-,>` | n       | Swap the node with the upper one   | motions.sibling-move              |
+| Keymap    | Mode    | Description                      | Requires                          |
+| --------- | ------- | -------------------------------- | --------------------------------- |
+| `[x`      | n       | Jump to the treesitter context   | LazyVim ui.treesitter-context     |
+| `w`       | n, o, x | Word forward (by subwords)       | motions.better-move-between-words |
+| `b`       | n, o, x | Word backward (by subwords)      | motions.better-move-between-words |
+| `e`       | n, o, x | End of word (by subwords)        | motions.better-move-between-words |
+| `cw`      | n       | Change word (by subwords)        | motions.better-move-between-words |
+| `<C-f>`   | i       | Word forward in insert           | motions.better-move-between-words |
+| `<C-b>`   | i       | Word backward in insert          | motions.better-move-between-words |
+| `<C-A-h>` | n       | Node to the left (treewalker)    | motions.sibling-move              |
+| `<C-A-l>` | n       | Node to the right (treewalker)   | motions.sibling-move              |
+| `<C-A-j>` | n       | Node below (treewalker)          | motions.sibling-move              |
+| `<C-A-k>` | n       | Node above (treewalker)          | motions.sibling-move              |
+| `<C-A-.>` | n       | Swap the node with the lower one | motions.sibling-move              |
+| `<C-A-,>` | n       | Swap the node with the upper one | motions.sibling-move              |
 
 ## 🪟 Windows
 
@@ -127,22 +127,22 @@ AI agents.
 
 **Requires**: the `git.gitlab` extra.
 
-| Keymap        | Mode | Description                       |
-| ------------- | ---- | --------------------------------- |
-| `<leader>gLr` | n    | Review the MR                     |
-| `<leader>gLe` | n    | Choose an MR                      |
-| `<leader>gLs` | n    | MR summary                        |
-| `<leader>gLd` | n    | The discussion tree               |
-| `<leader>gLc` | n    | Comment                           |
-| `<leader>gLc` | v    | Comment on multiple lines         |
-| `<leader>gLC` | v    | Comment with a suggested change   |
-| `<leader>gLn` | n    | Note                              |
+| Keymap        | Mode | Description                         |
+| ------------- | ---- | ----------------------------------- |
+| `<leader>gLr` | n    | Review the MR                       |
+| `<leader>gLe` | n    | Choose an MR                        |
+| `<leader>gLs` | n    | MR summary                          |
+| `<leader>gLd` | n    | The discussion tree                 |
+| `<leader>gLc` | n    | Comment                             |
+| `<leader>gLc` | v    | Comment on multiple lines           |
+| `<leader>gLC` | v    | Comment with a suggested change     |
+| `<leader>gLn` | n    | Note                                |
 | `<leader>gLm` | n    | To the discussion from a diagnostic |
-| `<leader>gLA` | n    | Approve                           |
-| `<leader>gLR` | n    | Revoke the approve                |
-| `<leader>gLM` | n    | Merge                             |
-| `<leader>gLp` | n    | Pipeline                          |
-| `<leader>gLo` | n    | Open in a browser                 |
+| `<leader>gLA` | n    | Approve                             |
+| `<leader>gLR` | n    | Revoke the approve                  |
+| `<leader>gLM` | n    | Merge                               |
+| `<leader>gLp` | n    | Pipeline                            |
+| `<leader>gLo` | n    | Open in a browser                   |
 
 ## 🐞 DAP (Debugging)
 

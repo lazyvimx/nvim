@@ -206,7 +206,7 @@ require("lazyvimx").setup({
 })
 ```
 
-Besides your groups there are always built-in ones: pinned buffers (with the  icon),
+Besides your groups there are always built-in ones: pinned buffers (with the icon),
 terminal buffers (term), and everything else (ungrouped).
 
 Groups work through the `overrides/bufferline/add-groups.lua` override (part of

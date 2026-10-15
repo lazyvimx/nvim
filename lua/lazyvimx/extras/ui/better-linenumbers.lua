@@ -4,7 +4,6 @@ return {
 	opts = function()
 		local function set_relnum_back(win)
 			vim.api.nvim_create_autocmd("CmdlineLeave", {
-				group = group,
 				once = true,
 				callback = function()
 					vim.wo[win].relativenumber = true

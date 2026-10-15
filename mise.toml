@@ -1,0 +1,4 @@
+[tools]
+node = "26.11.1"
+"aqua:JohnnyMorganz/StyLua" = "2.6.0"
+"aqua:Kampfkarren/selene" = "0.32.0"

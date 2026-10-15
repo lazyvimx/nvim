@@ -32,7 +32,7 @@ enhancement is plugged in through lazy.nvim's standard machinery (specs, `import
 ### Three Kinds of Modules
 
 | Kind          | Where                     | What it is                                                     |
-| ------------- | ------------------------- | --------------------------------------------------------------- |
+| ------------- | ------------------------- | -------------------------------------------------------------- |
 | **Extras**    | `lua/lazyvimx/extras/`    | Optional features; enabled explicitly (`:LazyExtras` / import) |
 | **Overrides** | `lua/lazyvimx/overrides/` | Tweaks to existing plugin settings; enabled in bundles         |
 | **Utilities** | `lua/lazyvimx/util/`      | Shared functions for extras, overrides, and user configs       |

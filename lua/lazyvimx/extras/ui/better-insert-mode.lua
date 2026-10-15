@@ -12,7 +12,7 @@ return {
 			})
 
 			vim.api.nvim_create_autocmd("InsertLeave", {
-				callback = function(event)
+				callback = function()
 					require("treesitter-context").enable()
 				end,
 			})
@@ -42,7 +42,7 @@ return {
 		"folke/snacks.nvim",
 		optional = true,
 
-		opts = function(_, opts)
+		opts = function()
 			vim.api.nvim_create_autocmd("InsertEnter", {
 				callback = function()
 					require("snacks").indent.disable()
@@ -61,7 +61,7 @@ return {
 		"lukas-reineke/virt-column.nvim",
 		optional = true,
 
-		opts = function(_, opts)
+		opts = function()
 			vim.api.nvim_create_autocmd("InsertEnter", {
 				callback = function()
 					require("virt-column").update({ enabled = false })

@@ -1,3 +1,6 @@
+-- Хуки расширений в opts выровнены таблицей, по одному в строку.
+--# selene: allow(multiple_statements)
+
 local mode_icon_map = {
 	["NORMAL"] = "󰰓",
 	["O-PENDING"] = "",

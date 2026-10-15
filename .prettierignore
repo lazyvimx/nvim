@@ -1,0 +1,8 @@
+node_modules
+package-lock.json
+# Ведёт release-please.
+CHANGELOG.md
+# Фикстуры записи демо: сэмплы кода и профиль Neovim, их вид -- часть сценария.
+docs/demo
+.claude
+.serena

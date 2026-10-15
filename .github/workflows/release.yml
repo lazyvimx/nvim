@@ -1,84 +1,61 @@
-name: release
+name: Release
 
+# Мёрж в main только обновляет релизный PR, который ведёт release-please.
+# Мёрж этого PR выпускает релиз, а сайт после него пересобирается со свежими доками.
 on:
   push:
     branches: [main]
   workflow_dispatch:
     inputs:
-      increment:
-        description: Version increment (auto = from conventional commits)
-        type: choice
-        options: [auto, patch, minor, major]
-        default: auto
       site_only:
-        description: Only rebuild the site, skip the release
+        description: Only redeploy the docs site, skip the release
         type: boolean
         default: false
-
-permissions:
-  contents: write # push main/develop + tag, create the GitHub Release
 
 concurrency:
   group: release
   cancel-in-progress: false
 
+permissions:
+  contents: read
+
 jobs:
+  check:
+    if: github.event_name == 'push'
+    uses: ./.github/workflows/check.yml
+
   release:
-    if: ${{ !inputs.site_only }}
+    needs: check
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    outputs:
+      created: ${{ steps.release.outputs.created }}
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # full history for conventional-changelog and tags
-          ref: main
+      - id: release
+        uses: aimuzov-projects/infra-site-kit/release@v1
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 24
-          cache: npm
-
-      - run: npm ci
-
-      - name: Configure git identity
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      # A push to main already carries the release content; a manual run pulls in develop.
-      - name: Fast-forward main to develop
-        if: github.event_name == 'workflow_dispatch'
-        run: |
-          git fetch origin develop
-          git merge --ff-only origin/develop
-
-      - name: Run release-it
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-          INCREMENT: ${{ inputs.increment }}
-        run: |
-          if [ -z "$INCREMENT" ] || [ "$INCREMENT" = "auto" ]; then
-            npx release-it --ci
-          else
-            npx release-it "$INCREMENT" --ci
-          fi
-
-      - name: Sync develop with the release commit
-        run: git push origin main:develop
-
-  # A separate job so the site can be rebuilt on its own: a skipped release isn't a failure,
-  # while a failed one still keeps the site on the previous version.
+  # Сайт берёт доки из main на каждой сборке, так что после релиза достаточно
+  # передеплоить его последний тег.
   site:
     needs: release
-    if: ${{ !failure() && !cancelled() }}
+    if: >-
+      always() &&
+      (needs.release.outputs.created == 'true' || (github.event_name == 'workflow_dispatch' && inputs.site_only))
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
-      # The site reads the version from develop at build time. GITHUB_TOKEN can't dispatch
-      # workflows in another repo, hence a fine-grained PAT with actions:write on lazyvimx/site.
-      - name: Rebuild the site
+      # GITHUB_TOKEN не запускает workflow в чужом репозитории, отсюда fine-grained PAT
+      # с actions:write и contents:read на lazyvimx/site.
+      - name: Redeploy the docs site
         env:
           GH_TOKEN: ${{ secrets.SITE_DEPLOY_TOKEN }}
         run: |
-          # Stray whitespace in a pasted secret breaks the auth header, and gh gets a 401.
+          # Лишние пробелы во вставленном секрете ломают заголовок авторизации, и gh получает 401.
           GH_TOKEN="$(printf '%s' "$GH_TOKEN" | tr -d '[:space:]')"
           export GH_TOKEN
 
@@ -87,5 +64,6 @@ jobs:
             exit 0
           fi
 
-          echo "token length: ${#GH_TOKEN}"
-          gh workflow run deploy.yml -R lazyvimx/site
+          tag=$(gh release view -R lazyvimx/site --json tagName -q .tagName)
+          gh workflow run deploy.yml -R lazyvimx/site -f tag="$tag"
+          echo "lazyvimx/site $tag redeploys with the fresh docs"

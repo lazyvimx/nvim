@@ -243,14 +243,14 @@ opts.keys = {
 The entry point: `{ "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" }`. Internal functions, not
 called directly:
 
-| Function                   | What it does                                                                                          |
-| -------------------------- | ------------------------------------------------------------------------------------------------------ |
-| `set_global()`             | `vim.g.lazyvim_check_order = false`, `vim.g.xtras_prios = {}`, `vim.g.lazyvim_explorer = "neo-tree"`  |
-| `vimopts_create_autocmd()` | subscribes to `LazyVimOptionsDefaults` to set Vim options                                             |
-| `update_root_lsp_ignore()` | adds `eslint` to `vim.g.root_lsp_ignore`                                                              |
-| `insert_extras()`          | registers the lazyvimx extras source (the 󰬟 icon) in the `:LazyExtras` UI                             |
-| `set_colorscheme()`        | sets the colorscheme via `get_flavor()`                                                               |
-| `has_plugins_dir()`        | plugs in the user's `lua/plugins/*.lua` if present                                                    |
+| Function                   | What it does                                                                                         |
+| -------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `set_global()`             | `vim.g.lazyvim_check_order = false`, `vim.g.xtras_prios = {}`, `vim.g.lazyvim_explorer = "neo-tree"` |
+| `vimopts_create_autocmd()` | subscribes to `LazyVimOptionsDefaults` to set Vim options                                            |
+| `update_root_lsp_ignore()` | adds `eslint` to `vim.g.root_lsp_ignore`                                                             |
+| `insert_extras()`          | registers the lazyvimx extras source (the 󰬟 icon) in the `:LazyExtras` UI                            |
+| `set_colorscheme()`        | sets the colorscheme via `get_flavor()`                                                              |
+| `has_plugins_dir()`        | plugs in the user's `lua/plugins/*.lua` if present                                                   |
 
 The spec order in `boot.lua` and the bootstrap process are described in
 [Architecture](ARCHITECTURE.md#🚀-bootstrap-process).
@@ -259,7 +259,7 @@ The spec order in `boot.lua` and the bootstrap process are described in
 
 ## 📋 Summary
 
-| Module         | Functions                                                                                                                             | Purpose         |
+| Module         | Functions                                                                                                                              | Purpose         |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
 | `lazyvimx`     | `setup()`, `config`                                                                                                                    | Configuration   |
 | `util.general` | `color_blend()`, `popen_get_result()`, `theme_is_dark()`, `get_flavor()`, `get_dotfiles_path()`, `has_extra()`, `warn_missing_extra()` | General helpers |
