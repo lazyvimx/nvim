@@ -3,7 +3,7 @@
 > [!TIP]
 > **🇬🇧 English version:** [EXTRAS.md](EXTRAS.md)
 
-Полный справочник по всей 51 экстре lazyvimx.
+Полный справочник по всем 52 экстрам lazyvimx.
 
 ## 📑 Содержание
 
@@ -14,7 +14,7 @@
 - [Motions (6)](#🧭-motions)
 - [Buf (4)](#🗂️-buf)
 - [Git (4)](#🔀-git)
-- [Lang (4)](#🌐-lang)
+- [Lang (5)](#🌐-lang)
 - [Linting (2)](#🧹-linting)
 - [Colorschemes (1)](#🌈-colorschemes)
 - [DAP (1)](#🐞-dap)
@@ -609,6 +609,18 @@ stylelint_lsp при включённой `linting.eslint`.
 
 JSONC (JSON с комментариями) подсвечивается парсером json.
 
+### lang.qml
+
+**Импорт:** `lazyvimx.extras.lang.qml`
+
+Поддержка QML, в том числе конфигов [Quickshell](https://quickshell.org): LSP `qmlls`,
+tree-sitter-парсеры `qmljs` и `qmldir`, форматирование через `qmlformat`. `qmlls` и `qmlformat`
+поставляются вместе с Qt (`qt6-declarative`) и через Mason не ставятся; если в дистрибутиве
+бинарь называется `qmlls6`, подхватится он.
+
+Для Quickshell создайте пустой `.qmlls.ini` рядом с `shell.qml` и добавьте его в gitignore:
+Quickshell при запуске сам впишет туда пути к своим модулям.
+
 ### lang.skhd
 
 **Импорт:** `lazyvimx.extras.lang.skhd`
@@ -745,14 +757,14 @@ Jest-адаптер для Neotest: запуск тестов из редакт�
 | Motions      | 6      | Навигация и перемещения по коду            |
 | Buf          | 4      | Управление буферами                        |
 | Git          | 4      | Git и GitLab                               |
-| Lang         | 4      | Поддержка языков                           |
+| Lang         | 5      | Поддержка языков                           |
 | Perf         | 4      | Производительность и удобство              |
 | Coding       | 2      | Инструменты написания кода                 |
 | Linting      | 2      | Линтеры                                    |
 | Colorschemes | 1      | Цветовые схемы                             |
 | DAP          | 1      | Отладка                                    |
 | Test         | 1      | Тестирование                               |
-| **Итого**    | **51** | плюс 5 core-модулей для включения наборами |
+| **Итого**    | **52** | плюс 5 core-модулей для включения наборами |
 
 ## 🚀 С чего начать
 

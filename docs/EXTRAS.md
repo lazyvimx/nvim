@@ -3,7 +3,7 @@
 > [!TIP]
 > **🇷🇺 Русская версия:** [EXTRAS.ru.md](EXTRAS.ru.md)
 
-The complete reference for all 51 lazyvimx extras.
+The complete reference for all 52 lazyvimx extras.
 
 ## 📑 Table of Contents
 
@@ -14,7 +14,7 @@ The complete reference for all 51 lazyvimx extras.
 - [Motions (6)](#🧭-motions)
 - [Buf (4)](#🗂️-buf)
 - [Git (4)](#🔀-git)
-- [Lang (4)](#🌐-lang)
+- [Lang (5)](#🌐-lang)
 - [Linting (2)](#🧹-linting)
 - [Colorschemes (1)](#🌈-colorschemes)
 - [DAP (1)](#🐞-dap)
@@ -615,6 +615,18 @@ EJS template highlighting: `.ejs` files are registered as eruby with the
 
 JSONC (JSON with comments) is highlighted with the json parser.
 
+### lang.qml
+
+**Import:** `lazyvimx.extras.lang.qml`
+
+QML support, including [Quickshell](https://quickshell.org) configs: the `qmlls` LSP, the
+`qmljs` and `qmldir` tree-sitter parsers, formatting via `qmlformat`. `qmlls` and `qmlformat`
+ship with Qt (`qt6-declarative`) and are not installed through Mason; `qmlls6` is picked up if
+that is what your distro calls it.
+
+For Quickshell, create an empty `.qmlls.ini` next to `shell.qml` and gitignore it: Quickshell
+fills it with the paths to its modules on start.
+
 ### lang.skhd
 
 **Import:** `lazyvimx.extras.lang.skhd`
@@ -751,14 +763,14 @@ by Jest itself, the `CI=true` environment variable.
 | Motions      | 6      | Navigation and code movement             |
 | Buf          | 4      | Buffer management                        |
 | Git          | 4      | Git and GitLab                           |
-| Lang         | 4      | Language support                         |
+| Lang         | 5      | Language support                         |
 | Perf         | 4      | Performance and convenience              |
 | Coding       | 2      | Coding tools                             |
 | Linting      | 2      | Linters                                  |
 | Colorschemes | 1      | Colorschemes                             |
 | DAP          | 1      | Debugging                                |
 | Test         | 1      | Testing                                  |
-| **Total**    | **51** | plus 5 core modules for enabling bundles |
+| **Total**    | **52** | plus 5 core modules for enabling bundles |
 
 ## 🚀 Where to Start
 

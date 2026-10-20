@@ -131,7 +131,7 @@ extras/
 ├── motions/       # Navigation (6)
 ├── buf/           # Buffers (4)
 ├── git/           # Git (4)
-├── lang/          # Languages (4)
+├── lang/          # Languages (5)
 ├── perf/          # Performance (4)
 ├── coding/        # Coding tools (2)
 ├── linting/       # Linters (2)
@@ -140,7 +140,7 @@ extras/
 └── test/          # Testing (1)
 ```
 
-51 feature extras; descriptions are in [Extras](EXTRAS.md).
+52 feature extras; descriptions are in [Extras](EXTRAS.md).
 
 ### Extra Template
 
