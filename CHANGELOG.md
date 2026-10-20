@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.14.0](https://github.com/lazyvimx/nvim/compare/v1.13.0...v1.14.0) (2026-10-20)
+
+
+### Features
+
+* **lang:** add QML and Quickshell support ([e6f668e](https://github.com/lazyvimx/nvim/commit/e6f668e2019771246203a616865d5714c6204237))
+* **lang:** add QML and Quickshell support ([f611d7f](https://github.com/lazyvimx/nvim/commit/f611d7fbe36c94f7d58102f22f3dbe0e2bb7a460))
+
 ## [1.13.0](https://github.com/lazyvimx/nvim/compare/v1.12.3...v1.13.0) (2026-10-15)
 
 
