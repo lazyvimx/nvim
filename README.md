@@ -11,7 +11,7 @@
 	<a href="https://github.com/lazyvimx/nvim/actions/workflows/release.yml"><img src="https://img.shields.io/github/actions/workflow/status/lazyvimx/nvim/release.yml?branch=main&label=release" alt="Release workflow"></a>
 	<a href="https://github.com/lazyvimx/nvim/releases"><img src="https://img.shields.io/github/v/release/lazyvimx/nvim?label=version" alt="Version"></a>
 	<a href="https://neovim.io"><img src="https://img.shields.io/badge/neovim-0.10%2B-57a143?logo=neovim&logoColor=white" alt="Neovim 0.10+"></a>
-	<a href="https://github.com/LazyVim/LazyVim"><img src="https://img.shields.io/badge/LazyVim-extras%2051-2e7de9" alt="LazyVim extras"></a>
+	<a href="https://github.com/LazyVim/LazyVim"><img src="https://img.shields.io/badge/LazyVim-extras%2052-2e7de9" alt="LazyVim extras"></a>
 	<a href="https://lazyvimx.aimuzov.online"><img src="https://img.shields.io/website?url=https%3A%2F%2Flazyvimx.aimuzov.online&label=docs" alt="Docs site"></a>
 	<a href="LICENSE"><img src="https://img.shields.io/github/license/lazyvimx/nvim" alt="License"></a>
 </p>
@@ -19,7 +19,7 @@
 <h3 align="center">An enhancement layer on top of LazyVim</h3>
 <p align="center">Optional extras and plugin overrides, documented at <a href="https://lazyvimx.aimuzov.online">lazyvimx.aimuzov.online</a></p>
 
-**An enhancement layer on top of [LazyVim](https://github.com/LazyVim/LazyVim): 51 optional
+**An enhancement layer on top of [LazyVim](https://github.com/LazyVim/LazyVim): 52 optional
 extras and 40 plugin overrides.**
 
 The idea is simple: LazyVim stays untouched, and everything else — UI polish, navigation,
@@ -74,7 +74,7 @@ Don't enable it, and it's like it doesn't exist.
 **New to lazyvimx?** Ready-to-use configurations live in [examples/](examples/):
 
 - **[Minimal](examples/minimal/)** — overrides only, the fastest start
-- **[Full-Featured](examples/full-featured/)** — all 51 extras
+- **[Full-Featured](examples/full-featured/)** — all 52 extras
 - **[VSCode User](examples/vscode-user/)** — for the VSCode Neovim extension
 - **[Russian Keyboard](examples/russian-keyboard/)** — with Russian layout support
 
@@ -184,13 +184,13 @@ lazyvimx/
 ├── lua/lazyvimx/
 │   ├── boot.lua              # Bootstrap configuration
 │   ├── init.lua              # Main module with setup()
-│   ├── extras/               # Optional modules (51 + 5 core)
+│   ├── extras/               # Optional modules (52 + 5 core)
 │   │   ├── core/             # Bundles: all, overrides, extras, keys, colorschemes
 │   │   ├── ui/               # Interface (22)
 │   │   ├── motions/          # Navigation (6)
 │   │   ├── buf/              # Buffers (4)
 │   │   ├── git/              # Git (4)
-│   │   ├── lang/             # Languages (4)
+│   │   ├── lang/             # Languages (5)
 │   │   ├── perf/             # Performance (4)
 │   │   ├── coding/           # Coding tools (2)
 │   │   ├── linting/          # Linters (2)
@@ -237,7 +237,7 @@ Inside:
 
 ## 📚 Documentation
 
-- **[EXTRAS.md](docs/EXTRAS.md)** — reference for all 51 extras ([🇷🇺](docs/EXTRAS.ru.md))
+- **[EXTRAS.md](docs/EXTRAS.md)** — reference for all 52 extras ([🇷🇺](docs/EXTRAS.ru.md))
 - **[CONFIGURATION.md](docs/CONFIGURATION.md)** — configuration and options ([🇷🇺](docs/CONFIGURATION.ru.md))
 - **[KEYBINDINGS.md](docs/KEYBINDINGS.md)** — all keymaps ([🇷🇺](docs/KEYBINDINGS.ru.md))
 - **[ARCHITECTURE.md](docs/ARCHITECTURE.md)** — how it all works ([🇷🇺](docs/ARCHITECTURE.ru.md))
@@ -362,7 +362,7 @@ A mode for the VSCode Neovim extension:
 
 ## 📊 Stats
 
-- **51 optional extras** across 11 categories
+- **52 optional extras** across 11 categories
 - **40 overrides** for deep customization
 - **Hundreds of custom highlights** for Catppuccin, Tokyo Night, and Nord
 - **60+ custom keymaps**

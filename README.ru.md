@@ -11,7 +11,7 @@
 	<a href="https://github.com/lazyvimx/nvim/actions/workflows/release.yml"><img src="https://img.shields.io/github/actions/workflow/status/lazyvimx/nvim/release.yml?branch=main&label=release" alt="Release workflow"></a>
 	<a href="https://github.com/lazyvimx/nvim/releases"><img src="https://img.shields.io/github/v/release/lazyvimx/nvim?label=version" alt="Версия"></a>
 	<a href="https://neovim.io"><img src="https://img.shields.io/badge/neovim-0.10%2B-57a143?logo=neovim&logoColor=white" alt="Neovim 0.10+"></a>
-	<a href="https://github.com/LazyVim/LazyVim"><img src="https://img.shields.io/badge/LazyVim-extras%2051-2e7de9" alt="Экстры LazyVim"></a>
+	<a href="https://github.com/LazyVim/LazyVim"><img src="https://img.shields.io/badge/LazyVim-extras%2052-2e7de9" alt="Экстры LazyVim"></a>
 	<a href="https://lazyvimx.aimuzov.online/ru/"><img src="https://img.shields.io/website?url=https%3A%2F%2Flazyvimx.aimuzov.online&label=docs" alt="Сайт документации"></a>
 	<a href="LICENSE"><img src="https://img.shields.io/github/license/lazyvimx/nvim" alt="Лицензия"></a>
 </p>
@@ -19,7 +19,7 @@
 <h3 align="center">Слой улучшений поверх LazyVim</h3>
 <p align="center">Опциональные экстры и оверрайды плагинов, документация на <a href="https://lazyvimx.aimuzov.online/ru/">lazyvimx.aimuzov.online</a></p>
 
-**Слой улучшений поверх [LazyVim](https://github.com/LazyVim/LazyVim): 51 опциональная экстра и
+**Слой улучшений поверх [LazyVim](https://github.com/LazyVim/LazyVim): 52 опциональные экстры и
 40 оверрайдов плагинов.**
 
 Идея простая: LazyVim остаётся как есть, а всё остальное — доводка интерфейса, навигация,
@@ -74,7 +74,7 @@ git-воркфлоу, поддержка русской раскладки — �
 **Впервые здесь?** В [examples/](examples/) лежат готовые конфигурации:
 
 - **[Minimal](examples/minimal/)** — только оверрайды, самый быстрый старт
-- **[Full-Featured](examples/full-featured/)** — все 51 экстра
+- **[Full-Featured](examples/full-featured/)** — все 52 экстры
 - **[VSCode User](examples/vscode-user/)** — для расширения VSCode Neovim
 - **[Russian Keyboard](examples/russian-keyboard/)** — с поддержкой русской раскладки
 
@@ -184,13 +184,13 @@ lazyvimx/
 ├── lua/lazyvimx/
 │   ├── boot.lua              # Bootstrap-конфигурация
 │   ├── init.lua              # Главный модуль с setup()
-│   ├── extras/               # Опциональные модули (51 + 5 core)
+│   ├── extras/               # Опциональные модули (52 + 5 core)
 │   │   ├── core/             # Сборные модули: all, overrides, extras, keys, colorschemes
 │   │   ├── ui/               # Интерфейс (22)
 │   │   ├── motions/          # Навигация (6)
 │   │   ├── buf/              # Буферы (4)
 │   │   ├── git/              # Git (4)
-│   │   ├── lang/             # Языки (4)
+│   │   ├── lang/             # Языки (5)
 │   │   ├── perf/             # Производительность (4)
 │   │   ├── coding/           # Инструменты кода (2)
 │   │   ├── linting/          # Линтеры (2)
@@ -237,7 +237,7 @@ lazyvimx/
 
 ## 📚 Документация
 
-- **[EXTRAS.ru.md](docs/EXTRAS.ru.md)** — справочник по всей 51 экстре ([🇬🇧](docs/EXTRAS.md))
+- **[EXTRAS.ru.md](docs/EXTRAS.ru.md)** — справочник по всем 52 экстрам ([🇬🇧](docs/EXTRAS.md))
 - **[CONFIGURATION.ru.md](docs/CONFIGURATION.ru.md)** — настройка и опции ([🇬🇧](docs/CONFIGURATION.md))
 - **[KEYBINDINGS.ru.md](docs/KEYBINDINGS.ru.md)** — все кеймапы ([🇬🇧](docs/KEYBINDINGS.md))
 - **[ARCHITECTURE.ru.md](docs/ARCHITECTURE.ru.md)** — как всё устроено ([🇬🇧](docs/ARCHITECTURE.md))
@@ -362,7 +362,7 @@ require("lazyvimx").setup({
 
 ## 📊 Статистика
 
-- **51 опциональная экстра** в 11 категориях
+- **52 опциональные экстры** в 11 категориях
 - **40 оверрайдов** для глубокой кастомизации
 - **Сотни кастомных хайлайтов** для Catppuccin, Tokyo Night и Nord
 - **60+ кастомных кеймапов**
