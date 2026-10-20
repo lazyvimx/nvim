@@ -1,6 +1,6 @@
 {
 	"name": "lazyvimx",
-	"version": "1.13.0",
+	"version": "1.14.0",
 	"private": true,
 	"description": "An enhancement layer on top of LazyVim: optional extras and plugin overrides",
 	"license": "Apache-2.0",
