@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.0](https://github.com/lazyvimx/nvim/compare/v1.14.0...v1.15.0) (2026-11-28)
+
+
+### Features
+
+* **perf:** add a Lazy plugin update lock extra ([#52](https://github.com/lazyvimx/nvim/issues/52)) ([fd9177c](https://github.com/lazyvimx/nvim/commit/fd9177cd7d87e2f871526db4a8fe3d61ca30165e))
+
 ## [1.14.0](https://github.com/lazyvimx/nvim/compare/v1.13.0...v1.14.0) (2026-10-20)
 
 
