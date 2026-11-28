@@ -3,7 +3,7 @@
 > [!TIP]
 > **🇷🇺 Русская версия:** [EXTRAS.ru.md](EXTRAS.ru.md)
 
-The complete reference for all 52 lazyvimx extras.
+The complete reference for all 53 lazyvimx extras.
 
 ## 📑 Table of Contents
 
@@ -18,7 +18,7 @@ The complete reference for all 52 lazyvimx extras.
 - [Linting (2)](#🧹-linting)
 - [Colorschemes (1)](#🌈-colorschemes)
 - [DAP (1)](#🐞-dap)
-- [Perf (4)](#⚡-perf)
+- [Perf (5)](#⚡-perf)
 - [Test (1)](#🧪-test)
 - [Summary Table](#📊-summary-table)
 
@@ -63,7 +63,7 @@ All of lazyvimx: overrides, every extra, colorschemes, and custom keymaps.
 
 - `core.colorschemes` — additional colorschemes
 - `core.overrides` — all 40 overrides
-- `core.extras` — all 49 extras from the registry
+- `core.extras` — all 52 extras from the registry
 - `core.keys` — custom keymaps
 
 On startup it also checks whether the recommended LazyVim extras are enabled and shows a
@@ -89,8 +89,8 @@ More in [Architecture](./ARCHITECTURE.md#overrides-system).
 
 **Import:** `lazyvimx.extras.core.extras`
 
-The registry of all 49 feature extras (every category except `colorschemes`) — one import
-instead of forty-nine. `ui.better-progressbar` from the registry is enabled only under
+The registry of all 52 feature extras (every category except `colorschemes`) — one import
+instead of fifty-two. `ui.better-progressbar` from the registry is enabled only under
 Ghostty (`TERM=xterm-ghostty`).
 
 ### core.colorschemes
@@ -706,6 +706,14 @@ formatters — including ones installed manually via `:MasonInstall`.
 
 **Plugin:** [`WhoIsSethDaniel/mason-tool-installer.nvim`](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim)
 
+### perf.lazy-update-lock
+
+**Import:** `lazyvimx.extras.perf.lazy-update-lock`
+
+On macOS, `:Lazy sync`, `:Lazy update`, and `:Lazy restore` share a lock on the plugin
+directory. Pressing `S` or `U` in a second window during an update shows a warning.
+The lock is released when the command finishes or Neovim exits.
+
 ### perf.local-config
 
 **Import:** `lazyvimx.extras.perf.local-config`
@@ -764,13 +772,13 @@ by Jest itself, the `CI=true` environment variable.
 | Buf          | 4      | Buffer management                        |
 | Git          | 4      | Git and GitLab                           |
 | Lang         | 5      | Language support                         |
-| Perf         | 4      | Performance and convenience              |
+| Perf         | 5      | Performance and convenience              |
 | Coding       | 2      | Coding tools                             |
 | Linting      | 2      | Linters                                  |
 | Colorschemes | 1      | Colorschemes                             |
 | DAP          | 1      | Debugging                                |
 | Test         | 1      | Testing                                  |
-| **Total**    | **52** | plus 5 core modules for enabling bundles |
+| **Total**    | **53** | plus 5 core modules for enabling bundles |
 
 ## 🚀 Where to Start
 

@@ -3,7 +3,7 @@
 > [!TIP]
 > **🇬🇧 English version:** [EXTRAS.md](EXTRAS.md)
 
-Полный справочник по всем 52 экстрам lazyvimx.
+Полный справочник по всем 53 экстрам lazyvimx.
 
 ## 📑 Содержание
 
@@ -18,7 +18,7 @@
 - [Linting (2)](#🧹-linting)
 - [Colorschemes (1)](#🌈-colorschemes)
 - [DAP (1)](#🐞-dap)
-- [Perf (4)](#⚡-perf)
+- [Perf (5)](#⚡-perf)
 - [Test (1)](#🧪-test)
 - [Сводная таблица](#📊-сводная-таблица)
 
@@ -62,7 +62,7 @@ Core — не фичи, а «сборные» модули: они включа�
 
 - `core.colorschemes` — дополнительные цветовые схемы
 - `core.overrides` — все 40 оверрайдов
-- `core.extras` — все 49 экстр из реестра
+- `core.extras` — все 52 экстры из реестра
 - `core.keys` — кастомные кеймапы
 
 Дополнительно при старте проверяет, включены ли рекомендуемые экстры самого LazyVim, и
@@ -88,8 +88,8 @@ Core — не фичи, а «сборные» модули: они включа�
 
 **Импорт:** `lazyvimx.extras.core.extras`
 
-Реестр всех 49 функциональных экстр (все категории, кроме `colorschemes`) — один импорт вместо
-сорока девяти. `ui.better-progressbar` из реестра включается только под Ghostty
+Реестр всех 52 функциональных экстр (все категории, кроме `colorschemes`) — один импорт вместо
+пятидесяти двух. `ui.better-progressbar` из реестра включается только под Ghostty
 (`TERM=xterm-ghostty`).
 
 ### core.colorschemes
@@ -699,6 +699,14 @@ bufferline, тёмный (`nord`) и светлый (`nord-light`) вариан�
 
 **Плагин:** [`WhoIsSethDaniel/mason-tool-installer.nvim`](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim)
 
+### perf.lazy-update-lock
+
+**Импорт:** `lazyvimx.extras.perf.lazy-update-lock`
+
+На macOS команды `:Lazy sync`, `:Lazy update` и `:Lazy restore` берут общую блокировку
+на каталог плагинов. Если нажать `S` или `U` во втором окне во время обновления,
+Lazy покажет предупреждение. Блокировка снимается при завершении команды или выходе из Neovim.
+
 ### perf.local-config
 
 **Импорт:** `lazyvimx.extras.perf.local-config`
@@ -758,13 +766,13 @@ Jest-адаптер для Neotest: запуск тестов из редакт�
 | Buf          | 4      | Управление буферами                        |
 | Git          | 4      | Git и GitLab                               |
 | Lang         | 5      | Поддержка языков                           |
-| Perf         | 4      | Производительность и удобство              |
+| Perf         | 5      | Производительность и удобство              |
 | Coding       | 2      | Инструменты написания кода                 |
 | Linting      | 2      | Линтеры                                    |
 | Colorschemes | 1      | Цветовые схемы                             |
 | DAP          | 1      | Отладка                                    |
 | Test         | 1      | Тестирование                               |
-| **Итого**    | **52** | плюс 5 core-модулей для включения наборами |
+| **Итого**    | **53** | плюс 5 core-модулей для включения наборами |
 
 ## 🚀 С чего начать
 

@@ -132,7 +132,7 @@ extras/
 ├── buf/           # Buffers (4)
 ├── git/           # Git (4)
 ├── lang/          # Languages (5)
-├── perf/          # Performance (4)
+├── perf/          # Performance (5)
 ├── coding/        # Coding tools (2)
 ├── linting/       # Linters (2)
 ├── colorschemes/  # Colorschemes (1)
@@ -140,7 +140,7 @@ extras/
 └── test/          # Testing (1)
 ```
 
-52 feature extras; descriptions are in [Extras](EXTRAS.md).
+53 feature extras; descriptions are in [Extras](EXTRAS.md).
 
 ### Extra Template
 
@@ -158,7 +158,7 @@ return {
 ### Core Bundles
 
 - `core.all` — imports the other four plus a notification about recommended LazyVim extras
-- `core.extras` — the registry of every feature extra (49 imports;
+- `core.extras` — the registry of every feature extra (52 imports;
   `ui.better-progressbar` — behind a `TERM=xterm-ghostty` condition)
 - `core.overrides` — all 4 override categories
 - `core.colorschemes` — additional colorschemes
